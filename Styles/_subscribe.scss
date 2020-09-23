@@ -1,0 +1,14 @@
+.subscribe{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__wrap{
+        display: flex;
+        height: 270px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}

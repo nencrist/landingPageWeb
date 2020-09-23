@@ -1,0 +1,33 @@
+.footer{
+    padding: 30px;
+    background-color: $btnBlack;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+   &__up{
+       display: flex;
+       justify-content: space-between;
+       
+   }
+
+   &__itemsWrap{
+       width: 50%;
+       display: flex;
+       margin-bottom: 20px;
+
+    
+   }
+
+   &__nav{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+   &__down{
+       display: flex;
+   }
+
+
+}

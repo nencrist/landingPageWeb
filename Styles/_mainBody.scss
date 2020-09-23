@@ -1,0 +1,43 @@
+.landingBody{
+    background-color: #F2F2F2;
+}
+
+h1{
+    font-size: 41px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Kanit', sans-serif;
+}
+
+.normalText{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: $textBlack;
+    //font-weight: 400;
+
+    &--negative{
+        color: white;
+    }
+
+    &--grey{
+        color: $footerGrey;
+        margin-left: 20px;
+    }
+}
+
+.title{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+
+    &--negative{
+        color: white;
+        margin-top: 20px;
+    }
+
+}

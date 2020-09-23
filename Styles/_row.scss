@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    padding: 30px;
+    
+    &__col{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+
+        &--btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--colors{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        &--char{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+    }
+
+   &--characteristics{
+        padding: 10px 30px 20px 30px;
+        background-color: $btnBlack;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   &__charWrap{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+   }
+}
+
+.colorBtnsWrap{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}

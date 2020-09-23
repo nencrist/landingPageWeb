@@ -1,0 +1,16 @@
+.mainBanner{
+    display: flex;
+    align-items: center;
+
+    &__image{
+        width: 900px;
+        margin: 20px 40px;
+    }
+
+    &__text{
+        display: flex;
+        margin-left: 50px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

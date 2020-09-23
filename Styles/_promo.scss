@@ -1,0 +1,25 @@
+.promo{
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    background: linear-gradient(90deg,#BFBFBF,#000000);
+    position: relative;
+    
+
+    &__cap{
+        position: absolute;
+        width: 270px;
+        height: 270px;
+        right: 0px;
+        transform: rotate(15deg);
+    }
+
+    &__text{
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+        margin-left: 430px;
+
+    }
+}

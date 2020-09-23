@@ -1,0 +1,62 @@
+.btnSection{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 175px;
+    height: 45px;
+    background-color: $btnBlack;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 6px;
+
+    &--secondary{
+        width: 335px;
+        height: 45px;
+    }
+
+    &__mini{
+        width: 35px;
+        height: 35px;
+        border-color: #00000056;
+        border-radius: 5px;
+
+        &--black{
+            background-color: #000000;
+        }
+
+        &--white{
+            background-color: #ffffff;
+        }
+
+        &--red{
+            background-color: #C1272D;
+        }
+
+        &--blue{
+            background-color: #0071BC;
+        }
+
+        &--green{
+            background-color: #009245;
+        }
+
+        &--yellow{
+            background-color: #FCEE21;
+        }
+
+        &--orange{
+            background-color: #F7931E;
+        }
+
+        &--brown{
+            background-color: #754C24;
+        }
+    }
+}
+
