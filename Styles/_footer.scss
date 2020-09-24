@@ -1,5 +1,5 @@
 .footer{
-    padding: 30px;
+    padding: 30px 30px 15px 30px;
     background-color: $btnBlack;
     display: flex;
     flex-direction: column;
@@ -19,14 +19,34 @@
     
    }
 
-   &__nav{
+   &__navWrap{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    &--down{
+        justify-content: flex-start;
+    }
 }
+
+    &__nav{
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
 
    &__down{
        display: flex;
+   }
+
+   &__socialWrap{
+       width: 50%;
+       display: flex;
+       justify-content: flex-end;
    }
 
 

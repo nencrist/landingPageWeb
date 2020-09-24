@@ -103,9 +103,9 @@
         <article class="subscribe">
             <h3>Suscribete Ahora</h3>
             <section class="subscribe__wrap">
-                <p class="normalText">Nombre</p>
+                <p class="normalText"><strong>Nombre</strong></p>
                 <input class="input" type="text" placeholder="Nombre">
-                <p class="normalText">Correo</p>
+                <p class="normalText"><strong>Correo</strong></p>
                 <input class="input" type="text" placeholder="Correo">
                 <button class="btn btn--secondary">SUSCRÍBETE</button>
             </section>
@@ -120,22 +120,30 @@
                     para todo el mundo y con el cual la gente <br>
                     se sienta cómoda y exclusiva.</p>
             </section>
-            <section class="footer__nav">
-                   <p class="normalText normalText--negative">Acerca de</p>
-                   <p class="normalText normalText--negative">Noticias</p> 
-                   <p class="normalText normalText--negative">Nuestro Equipo</p> 
-                   <p class="normalText normalText--negative">Nuestros Patrocinadores</p> 
-                   <p class="normalText normalText--negative">Centro de Ayuda</p> 
-                   <p class="normalText normalText--negative">Preguntas Frecuentes</p> 
+            <section class="footer__navWrap">
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Acerca de</p></a>
+                    <a href=""><p class="normalText normalText--negative">Noticias</p></a>
+                    <a href=""><p class="normalText normalText--negative">Nuestro Equipo</p></a>
+                </section>
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Nuestros Patrocinadores</p></a>
+                    <a href=""><p class="normalText normalText--negative">Centro de Ayuda</p></a>
+                    <a href=""><p class="normalText normalText--negative">Preguntas Frecuentes</p></a>
+                </section>
             </section>
         </section>
         <section class="footer__down">
-               <p>2020 Visionary Trend</p> 
-               <p>Terminos de Uso</p> 
-               <p>Politica de Privacidad</p> 
-            <img src="" alt="facebook">
-            <img src="" alt="twitter">
-            <img src="" alt="instagram">
+            <section class="footer__navWrap footer__navWrap--down" >
+                <a href=""><p class="normalText normalText--footerDownGrey">2020 Visionary Trend</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Terminos de Uso</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Politica de Privacidad</p></a>
+            </section>
+            <section class="footer__socialWrap">
+                <img class="image__social" src="/Images/facebookLink.png" alt="facebook">
+                <img class="image__social" src="/Images/twitterLink.png" alt="twitter">
+                <img class="image__social" src="/Images/instaLink.png" alt="instagram">
+            </section>
         </section>
     </footer>
 </body>
