@@ -26,6 +26,10 @@
         border-color: #00000056;
         border-radius: 5px;
 
+        &:hover{
+            opacity: 70%;
+        }
+
         &--black{
             background-color: #000000;
         }
@@ -56,6 +60,16 @@
 
         &--brown{
             background-color: #754C24;
+        }
+
+        &--white2{
+            background-color: #ffffff;
+            margin-left: 20px;
+        }
+
+        &--black2{
+            background-color: #000000;
+            margin-left: 20px;
         }
     }
 }

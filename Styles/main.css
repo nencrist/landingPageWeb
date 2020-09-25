@@ -418,6 +418,10 @@ a {
   border-radius: 5px;
 }
 
+.btn__mini:hover {
+  opacity: 70%;
+}
+
 .btn__mini--black {
   background-color: #000000;
 }
@@ -448,6 +452,16 @@ a {
 
 .btn__mini--brown {
   background-color: #754C24;
+}
+
+.btn__mini--white2 {
+  background-color: #ffffff;
+  margin-left: 20px;
+}
+
+.btn__mini--black2 {
+  background-color: #000000;
+  margin-left: 20px;
 }
 
 .promo {
@@ -569,9 +583,43 @@ a {
   padding: 20px;
 }
 
+.colorBtnsWrap--logo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .image__interactive {
   width: 500px;
   height: 500px;
+}
+
+.image__interactive--Black {
+  display: none;
+}
+
+.image__interactive--Red {
+  display: none;
+}
+
+.image__interactive--Blue {
+  display: none;
+}
+
+.image__interactive--Yellow {
+  display: none;
+}
+
+.image__interactive--Green {
+  display: none;
+}
+
+.image__interactive--Orange {
+  display: none;
+}
+
+.image__interactive--Brown {
+  display: none;
 }
 
 .image__firstChar {

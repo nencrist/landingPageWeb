@@ -3,6 +3,34 @@
     &__interactive{
         width: 500px;
         height: 500px;
+
+        &--Black{
+            display: none;
+        }
+
+        &--Red{
+            display: none;
+        }
+
+        &--Blue{
+            display: none;
+        }
+
+        &--Yellow{
+            display: none;
+        }
+
+        &--Green{
+            display: none;
+        }
+
+        &--Orange{
+            display: none;
+        }
+
+        &--Brown{
+            display: none;
+        }
     }
 
     &__firstChar{

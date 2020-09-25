@@ -48,4 +48,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+
+    &--logo{
+        justify-content: flex-start;
+    }
 }
