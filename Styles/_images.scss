@@ -4,34 +4,17 @@
         width: 500px;
         height: 500px;
 
-        &--Black{
-            display: none;
-        }
-
-        &--Red{
-            display: none;
-        }
-
-        &--Blue{
-            display: none;
-        }
-
-        &--Yellow{
-            display: none;
-        }
-
-        &--Green{
-            display: none;
-        }
-
-        &--Orange{
-            display: none;
-        }
-
-        &--Brown{
-            display: none;
-        }
     }
+
+    &__interactiveLogo{
+        position: absolute;
+        width: 500px;
+        height: 500px;;
+    }
+
+    //&__blackLogo{
+      //  display: none;
+    //}
 
     &__firstChar{
         margin-top: 20px;

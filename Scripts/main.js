@@ -1,5 +1,6 @@
 const interactiveImage = document.querySelector('.image__interactive');
 const colorBtns = document.querySelectorAll('.btn__mini');
+const interactiveLogo = document.querySelector('.image__interactiveLogo')
 
 function colorHandle(event) {
     var color = event.target.getAttribute('name');
@@ -26,6 +27,12 @@ function colorHandle(event) {
     }
     if(color == "white"){
         interactiveImage.setAttribute('src', "/Images/persoCap.png");
+    }
+    if(color == "black2"){
+        interactiveLogo.setAttribute('src', "/Images/blackLogo.png")
+    }
+    if(color == "white2"){
+        interactiveLogo.setAttribute('src', "/Images/whiteLogo.png");
     }
     console.log('click', color);
 }

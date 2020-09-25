@@ -456,12 +456,12 @@ a {
 
 .btn__mini--white2 {
   background-color: #ffffff;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .btn__mini--black2 {
   background-color: #000000;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .promo {
@@ -594,32 +594,10 @@ a {
   height: 500px;
 }
 
-.image__interactive--Black {
-  display: none;
-}
-
-.image__interactive--Red {
-  display: none;
-}
-
-.image__interactive--Blue {
-  display: none;
-}
-
-.image__interactive--Yellow {
-  display: none;
-}
-
-.image__interactive--Green {
-  display: none;
-}
-
-.image__interactive--Orange {
-  display: none;
-}
-
-.image__interactive--Brown {
-  display: none;
+.image__interactiveLogo {
+  position: absolute;
+  width: 500px;
+  height: 500px;
 }
 
 .image__firstChar {
