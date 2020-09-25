@@ -16,9 +16,14 @@
 
     &__navItem{
         margin-left: 50px;
-        font-family: 'Dosis', sans-serif;
-        font-weight: 500; 
-        font-size: 22px;
+        color: $textBlack;
+
+        p{
+            font-weight: 500;
+            font-family: 'Dosis', sans-serif;
+            font-size: 22px;
+        }
+
     }
 
     &__inputDiv {

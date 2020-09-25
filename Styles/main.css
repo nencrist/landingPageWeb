@@ -258,6 +258,10 @@ h1, h2, h3, h4 {
   font-family: 'Kanit', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .normalText {
   font-size: 20px;
   font-family: 'Dosis', sans-serif;
@@ -321,8 +325,12 @@ h1, h2, h3, h4 {
 
 .mainHeader__navItem {
   margin-left: 50px;
-  font-family: 'Dosis', sans-serif;
+  color: #333;
+}
+
+.mainHeader__navItem p {
   font-weight: 500;
+  font-family: 'Dosis', sans-serif;
   font-size: 22px;
 }
 
@@ -457,11 +465,9 @@ h1, h2, h3, h4 {
 
 .promo__cap {
   position: absolute;
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   right: 0px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
 }
 
 .promo__text {
