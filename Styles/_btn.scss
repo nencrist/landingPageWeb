@@ -1,7 +1,6 @@
 .btnSection{
     display: flex;
     flex-direction: row ;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -14,10 +13,12 @@
     font-weight: 700;
     font-family: 'Dosis', sans-serif;
     border-radius: 6px;
+    margin-right: 30px;
 
     &--secondary{
         width: 335px;
         height: 45px;
+        margin: 0;
     }
 
     &__mini{

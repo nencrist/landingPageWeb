@@ -1,9 +1,19 @@
 .promo{
     display: flex;
+    width: 100%;
     padding: 0px 30px;
     align-items: center;
     background: linear-gradient(90deg,#BFBFBF,#000000);
     position: relative;
+
+    &__sidesCont{
+        width: 20%;
+    }
+
+    &__centerCont{
+        width: 60%;
+        text-align: center;
+    }
     
 
     &__cap{
@@ -11,6 +21,7 @@
         width: 200px;
         height: 200px;
         right: 0px;
+        top: -30px;
     }
 
     &__text{
@@ -18,7 +29,5 @@
         font-weight: 700;
         font-size: 30px;
         color: white;
-        margin-left: 430px;
-
     }
 }
