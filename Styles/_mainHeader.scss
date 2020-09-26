@@ -1,21 +1,34 @@
 .mainHeader{
+    width: 100%;
     display: flex;
     align-items: center;
     border-bottom: #0000004f solid 1px;
 
+    &__logoCont{
+        width: 10%;
+    }
+
     &__logo{
-        width: 125px;
+        min-width: 110px;
         height: 90px;
-        padding: 15px 30px;
+        padding: 15px 0px 15px 30px;
+        margin-right: 20px;
     }
 
     &__nav{
+        width: 90%;
         display: flex;
         padding: 0; 
     }
 
+    &__navDiv{
+        display: flex;
+        width: 50%;
+    }
+
+
     &__navItem{
-        margin-left: 50px;
+        margin-right: 50px;
         color: $textBlack;
 
         p{
@@ -27,7 +40,9 @@
     }
 
     &__inputDiv {
-        margin-left: 1000px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
         position: relative;
     }
 
@@ -35,13 +50,14 @@
         border-radius: 7px;
         height: 30px;
         border-width: 1px;
+        margin-right: 30px;
     }
 
     &__searchIcon{
         position: absolute;
         height: 20px;
         width: 20px;
-        right: 5px;
+        right: 175px;
         top: 5px;
 
     }
