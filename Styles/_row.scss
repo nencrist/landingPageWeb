@@ -82,5 +82,21 @@
                 align-items: center;
             }
         }
+
+        &--characteristics{
+            padding: 20px 30px;
+            background-color: $btnBlack;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
+
+       &__charWrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     }
 }

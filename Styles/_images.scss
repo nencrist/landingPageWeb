@@ -23,6 +23,26 @@
         height: 220px;
     }
 
+    @media(max-width: 850px){
+        &__firstChar{
+            margin-top: 20px;
+            width: 400px;
+            height: 290px;
+        }
+    
+        &__secondChar{
+            margin-top: 20px;
+            width: 300px;
+            height: 300px;
+        }
+    
+        &__thirdChar{
+            margin-top: 20px;
+            width: 400px;
+            height: 290px;
+        }
+    }
+
     &__social{
         margin-left: 20px;
     }
@@ -39,5 +59,6 @@
             top: 0px;
         }
     }
-
 }
+
+
