@@ -803,6 +803,23 @@ a {
   }
 }
 
+@media (max-width: 850px) {
+  .promo {
+    padding-left: 20px;
+  }
+  .promo__cap {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 10px;
+    top: -20px;
+  }
+  .promo__discount {
+    width: 120px;
+    height: 80px;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -930,6 +947,7 @@ a {
     position: relative;
   }
   .row__col--btn {
+    padding-left: 0px;
     margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
