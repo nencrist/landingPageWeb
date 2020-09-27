@@ -338,6 +338,52 @@ a {
   }
 }
 
+@media (max-width: 850px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Kanit', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  .normalText {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: #333;
+  }
+  .normalText--negative {
+    color: white;
+  }
+  .normalText--grey {
+    color: #B3B3B3;
+    margin-left: 40px;
+  }
+  .normalText--footerDownGrey {
+    color: #B3B3B3;
+    font-size: 16px;
+    margin-right: 50px;
+  }
+  .normalText--footerDown {
+    color: white;
+    font-size: 16px;
+    margin-right: 50px;
+  }
+  .title {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+  }
+  .title--negative {
+    color: white;
+    margin-top: 20px;
+  }
+}
+
 .mainHeader {
   width: 100%;
   display: -webkit-box;
@@ -515,6 +561,45 @@ a {
   height: 30%;
 }
 
+@media (max-width: 850px) {
+  .mainBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .mainBanner__imageCont {
+    width: 100%;
+    padding: 0px;
+  }
+  .mainBanner__image {
+    width: 1000px;
+    max-height: 100%;
+    margin: 0px;
+  }
+  .mainBanner__textWrap {
+    padding-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainBanner__textCont {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .btnSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +690,38 @@ a {
   }
   .btn--secondary {
     width: 270px;
+  }
+}
+
+@media (max-width: 850px) {
+  .btnSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+  }
+  .btn {
+    width: 175px;
+    height: 45px;
+    background-color: #0D0D0D;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 6px;
+    margin-right: 30px;
+  }
+  .btn--secondary {
+    width: 335px;
+    height: 45px;
+    margin: 0;
   }
 }
 
