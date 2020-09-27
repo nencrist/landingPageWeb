@@ -959,6 +959,19 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media (max-width: 850px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
   .row--characteristics {
     padding: 20px 30px;
     background-color: #0D0D0D;
@@ -1059,6 +1072,19 @@ a {
           justify-content: center;
 }
 
+@media (max-width: 850px) {
+  .references {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 30px;
+  }
+}
+
 .person {
   width: 50%;
   display: -webkit-box;
@@ -1089,6 +1115,33 @@ a {
   }
   .person__image--jBalvin {
     width: 430px;
+  }
+}
+
+@media (max-width: 850px) {
+  .person {
+    width: 100%;
+  }
+  .person--jBalvin {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .person--karolG {
+    margin-top: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .person__image {
+    width: 500px;
+    height: 300px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .person__image--jBalvin {
+    width: 530px;
   }
 }
 

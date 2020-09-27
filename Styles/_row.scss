@@ -64,9 +64,9 @@
 
 @media(max-width: 1080px){
     .row{
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
 
         &__col{
             width: 100%;
@@ -83,6 +83,15 @@
             }
         }
 
+    }
+}
+
+@media(max-width: 850px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        
         &--characteristics{
             padding: 20px 30px;
             background-color: $btnBlack;
