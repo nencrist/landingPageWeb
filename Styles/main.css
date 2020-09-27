@@ -386,12 +386,6 @@ a {
   font-size: 22px;
 }
 
-@media (max-width: 1150px) {
-  .mainHeader__navItem p {
-    font-size: 20px;
-  }
-}
-
 .mainHeader__inputDiv {
   width: 50%;
   display: -webkit-box;
@@ -416,6 +410,75 @@ a {
   width: 20px;
   right: 175px;
   top: 5px;
+}
+
+.mainHeader__menuIcon {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .mainHeader p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .mainHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: #0000004f solid 1px;
+  }
+  .mainHeader__logoCont {
+    width: 100px;
+  }
+  .mainHeader__logo {
+    min-width: 100px;
+    height: 90px;
+    padding: 15px 0px 15px 30px;
+  }
+  .mainHeader__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 30px;
+  }
+  .mainHeader__navDiv {
+    display: none;
+  }
+  .mainHeader__navItem {
+    display: none;
+  }
+  .mainHeader__inputDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .mainHeader__input {
+    display: none;
+  }
+  .mainHeader__searchIcon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0px;
+    right: 130px;
+  }
+  .mainHeader__menuIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    width: 55px;
+  }
 }
 
 .mainBanner {

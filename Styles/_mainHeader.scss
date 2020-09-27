@@ -37,12 +37,6 @@
             font-size: 22px;
         }
 
-        @media(max-width: 1150px){
-            p{
-                font-size: 20px;
-            }
-        }
-
     }
 
     &__inputDiv {
@@ -68,7 +62,79 @@
 
     }
 
+    &__menuIcon{
+        display: none;
+    }
+
+    @media(max-width: 1150px){
+        p{
+            font-size: 20px;
+        }
+    }
+
 }
+
+@media(max-width: 850px){
+
+    .mainHeader{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: #0000004f solid 1px;
+    
+        &__logoCont{
+            width: 100px;
+        }
+    
+        &__logo{
+            min-width: 100px;
+            height: 90px;
+            padding: 15px 0px 15px 30px;
+        }
+    
+        &__nav{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+    
+        &__navDiv{
+            display: none;
+        }
+    
+    
+        &__navItem{
+            display: none;
+    
+        }
+    
+        &__inputDiv {
+            display: flex;
+            position: relative;
+        }
+    
+        &__input{
+            display: none;
+        }
+    
+        &__searchIcon{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 0px;
+            right: 130px;
+    
+        }
+
+        &__menuIcon{
+            display: flex;
+            height: 40px;
+            width: 55px;
+        }
+    
+    }        
+}
+
 
 
 
