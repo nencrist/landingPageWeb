@@ -19,4 +19,17 @@
             width: 530px;
         }
     }
+
+@media (max-width: 1150px) {
+
+    &__image{
+        width: 400px;
+        height: 250px;
+    
+        &--jBalvin{
+            width: 430px;
+        }
+    
+    }
+}
 }

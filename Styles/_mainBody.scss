@@ -3,7 +3,7 @@
 }
 
 h1{
-    font-size: 41px;
+    font-size: 50px;
 }
 
 h3{
@@ -22,7 +22,6 @@ a{
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
     color: $textBlack;
-    //font-weight: 400;
 
     &--negative{
         color: white;
@@ -44,6 +43,7 @@ a{
         font-size: 16px;
         margin-right: 50px;
     }
+
 }
 
 .title{
@@ -56,4 +56,10 @@ a{
         margin-top: 20px;
     }
 
+}
+
+@media(max-width: 1300px){
+    h1{
+        font-size: 40px;
+    }
 }

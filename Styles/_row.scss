@@ -1,6 +1,7 @@
 .row{
     display: flex;
     padding: 30px;
+
     
     &__col{
         width: 33%;
@@ -8,6 +9,7 @@
         justify-content: center;
 
         &--btn{
+            padding-left: 30px;
             display: flex;
             justify-content: center;
             align-items: center;

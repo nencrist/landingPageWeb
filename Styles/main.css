@@ -247,7 +247,7 @@ input[type=button] {
 }
 
 h1 {
-  font-size: 41px;
+  font-size: 50px;
 }
 
 h3 {
@@ -300,6 +300,12 @@ a {
   margin-top: 20px;
 }
 
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 .mainHeader {
   width: 100%;
   display: -webkit-box;
@@ -312,14 +318,14 @@ a {
 }
 
 .mainHeader__logoCont {
-  width: 10%;
+  width: 100px;
+  margin-right: 30px;
 }
 
 .mainHeader__logo {
-  min-width: 110px;
+  min-width: 100px;
   height: 90px;
   padding: 15px 0px 15px 30px;
-  margin-right: 20px;
 }
 
 .mainHeader__nav {
@@ -385,11 +391,13 @@ a {
 }
 
 .mainBanner__imageCont {
+  padding-left: 50px;
   width: 50%;
 }
 
 .mainBanner__image {
-  width: 900px;
+  width: 1000px;
+  max-height: 100%;
   margin: 20px 0px;
 }
 
@@ -528,6 +536,26 @@ a {
   color: white;
 }
 
+@media (max-width: 1300px) {
+  .promo__cap {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    right: 0px;
+    top: -20px;
+  }
+  .promo__discount {
+    width: 169px;
+    height: 111px;
+  }
+  .promo__text {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: white;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,6 +574,7 @@ a {
 }
 
 .row__col--btn {
+  padding-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,15 +654,9 @@ a {
           justify-content: flex-start;
 }
 
-.image__interactive {
-  width: 500px;
-  height: 500px;
-}
-
 .image__interactiveLogo {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  max-width: 31.5%;
 }
 
 .image__firstChar {
@@ -693,6 +716,16 @@ a {
 
 .person__image--jBalvin {
   width: 530px;
+}
+
+@media (max-width: 1150px) {
+  .person__image {
+    width: 400px;
+    height: 250px;
+  }
+  .person__image--jBalvin {
+    width: 430px;
+  }
 }
 
 .subscribe {

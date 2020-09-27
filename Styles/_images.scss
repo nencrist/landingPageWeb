@@ -1,15 +1,12 @@
 .image{
 
     &__interactive{
-        width: 500px;
-        height: 500px;
-
+       
     }
 
     &__interactiveLogo{
         position: absolute;
-        width: 500px;
-        height: 500px;;
+        max-width: 31.5%;
     }
 
     &__firstChar{
