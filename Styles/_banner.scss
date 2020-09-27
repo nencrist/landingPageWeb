@@ -14,11 +14,14 @@
         margin: 20px 0px;
     }
 
-    &__textCont{
+    &__textWrap{
         width: 50%;
         display: flex;
         margin-left: 100px;
-        flex-direction: column;
-        justify-content: space-between;
+    }
+
+    &__textCont{
+        width: 70%;
+        height: 30%;
     }
 }

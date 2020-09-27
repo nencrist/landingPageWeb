@@ -22,10 +22,11 @@
    &__navWrap{
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 
     &--down{
+        display: flex;
+        width: 50%;
         justify-content: flex-start;
     }
 }
@@ -49,5 +50,12 @@
        justify-content: flex-end;
    }
 
+   @media(max-width: 1150px){
+       
+        &__imageLogo{
+            width: 100px;
+            height: 100px;
+        }
+   }
 
 }

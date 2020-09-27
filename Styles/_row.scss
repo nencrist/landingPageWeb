@@ -44,14 +44,42 @@
        display: flex;
        justify-content: space-between;
    }
+
 }
 
 .colorBtnsWrap{
     display: flex;
-    justify-content: space-evenly;
+   //justify-content: space-evenly;
     padding: 20px;
 
     &--logo{
         justify-content: flex-start;
+    }
+
+    @media(max-width: 1500px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 1080px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+        &__col{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &--btn{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }

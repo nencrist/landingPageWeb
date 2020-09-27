@@ -63,3 +63,47 @@ a{
         font-size: 40px;
     }
 }
+
+@media(max-width: 1150px){
+    h1{
+        font-size: 33px;
+    }
+
+    h3{
+        font-size: 23px;
+    }
+
+    .title{
+        font-size: 19px;
+    }
+
+    .normalText{
+        
+        font-size: 18px;
+
+        &--footerDownGrey{
+            font-size: 15px;
+        }
+
+        &--footerDown{
+            font-size: 15px;
+        }
+    }
+
+
+}
+
+@media(max-width: 1040px){
+    .normalText{
+
+        &--footerDown{
+            font-size: 15px;
+            margin-right: 15px;
+        }
+
+        &--footerDownGrey{
+            font-size: 15px;
+            margin-right: 20px;
+        }
+    }
+}

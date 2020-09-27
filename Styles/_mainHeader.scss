@@ -37,6 +37,12 @@
             font-size: 22px;
         }
 
+        @media(max-width: 1150px){
+            p{
+                font-size: 20px;
+            }
+        }
+
     }
 
     &__inputDiv {
@@ -63,5 +69,6 @@
     }
 
 }
+
 
 

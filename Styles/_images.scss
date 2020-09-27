@@ -1,9 +1,5 @@
 .image{
 
-    &__interactive{
-       
-    }
-
     &__interactiveLogo{
         position: absolute;
         max-width: 31.5%;
@@ -31,6 +27,17 @@
         margin-left: 20px;
     }
 
+    @media(max-width: 1080px){
 
-    
+        &__interactive{
+            max-width: 350px;
+        }
+
+        &__interactiveLogo{
+            position: absolute;
+            max-width: 350px;
+            top: 0px;
+        }
+    }
+
 }

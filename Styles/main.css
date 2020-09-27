@@ -306,6 +306,38 @@ a {
   }
 }
 
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  .title {
+    font-size: 19px;
+  }
+  .normalText {
+    font-size: 18px;
+  }
+  .normalText--footerDownGrey {
+    font-size: 15px;
+  }
+  .normalText--footerDown {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .normalText--footerDown {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  .normalText--footerDownGrey {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+}
+
 .mainHeader {
   width: 100%;
   display: -webkit-box;
@@ -352,6 +384,12 @@ a {
   font-weight: 500;
   font-family: 'Dosis', sans-serif;
   font-size: 22px;
+}
+
+@media (max-width: 1150px) {
+  .mainHeader__navItem p {
+    font-size: 20px;
+  }
 }
 
 .mainHeader__inputDiv {
@@ -401,19 +439,17 @@ a {
   margin: 20px 0px;
 }
 
-.mainBanner__textCont {
+.mainBanner__textWrap {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 100px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.mainBanner__textCont {
+  width: 70%;
+  height: 30%;
 }
 
 .btnSection {
@@ -450,6 +486,7 @@ a {
   height: 35px;
   border-color: #00000056;
   border-radius: 5px;
+  margin: 10px 10px;
 }
 
 .btn__mini:hover {
@@ -496,6 +533,16 @@ a {
 .btn__mini--black2 {
   background-color: #000000;
   margin-left: 30px;
+}
+
+@media (max-width: 1150px) {
+  .btn {
+    height: 35px;
+    font-size: 18px;
+  }
+  .btn--secondary {
+    width: 270px;
+  }
 }
 
 .promo {
@@ -552,6 +599,26 @@ a {
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
     font-size: 23px;
+    color: white;
+  }
+}
+
+@media (max-width: 1150px) {
+  .promo__cap {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: 0px;
+    top: -20px;
+  }
+  .promo__discount {
+    width: 145px;
+    height: 91px;
+  }
+  .promo__text {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
     color: white;
   }
 }
@@ -642,9 +709,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   padding: 20px;
 }
 
@@ -652,6 +716,51 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 1500px) {
+  .colorBtnsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1080px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .row__col {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .row__col--btn {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .image__interactiveLogo {
@@ -679,6 +788,17 @@ a {
 
 .image__social {
   margin-left: 20px;
+}
+
+@media (max-width: 1080px) {
+  .image__interactive {
+    max-width: 350px;
+  }
+  .image__interactiveLogo {
+    position: absolute;
+    max-width: 350px;
+    top: 0px;
+  }
 }
 
 .references {
@@ -764,6 +884,13 @@ a {
   border-width: 1px;
 }
 
+@media (max-width: 1150px) {
+  .input {
+    height: 35px;
+    width: 270px;
+  }
+}
+
 .footer {
   padding: 30px 30px 15px 30px;
   background-color: #0D0D0D;
@@ -799,14 +926,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .footer__navWrap--down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -840,5 +969,12 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 1150px) {
+  .footer__imageLogo {
+    width: 100px;
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

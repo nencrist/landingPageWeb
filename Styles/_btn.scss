@@ -26,6 +26,7 @@
         height: 35px;
         border-color: #00000056;
         border-radius: 5px;
+        margin: 10px 10px;
 
         &:hover{
             opacity: 70%;
@@ -71,6 +72,17 @@
         &--black2{
             background-color: #000000;
             margin-left:30px;
+        }
+    }
+}
+
+@media(max-width: 1150px){
+    .btn{
+        height: 35px;
+        font-size: 18px;
+
+        &--secondary{
+            width: 270px;
         }
     }
 }
