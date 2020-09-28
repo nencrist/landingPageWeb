@@ -531,6 +531,76 @@ a {
   }
 }
 
+@media (max-width: 650px) {
+  .mainHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: #0000004f solid 1px;
+  }
+  .mainHeader__logoCont {
+    width: 70px;
+  }
+  .mainHeader__logo {
+    min-width: 80px;
+    height: 75px;
+    padding: 15px 0px 15px 30px;
+  }
+  .mainHeader__searchIcon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    right: 90px;
+  }
+  .mainHeader__menuIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    width: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: #0000004f solid 1px;
+  }
+  .mainHeader__logoCont {
+    width: 70px;
+  }
+  .mainHeader__logo {
+    min-width: 65px;
+    height: 65px;
+    padding: 15px 0px 15px 20px;
+  }
+  .mainHeader__searchIcon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    right: 60px;
+  }
+  .mainHeader__menuIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
+    width: 30px;
+  }
+}
+
 .mainBanner {
   display: -webkit-box;
   display: -ms-flexbox;
