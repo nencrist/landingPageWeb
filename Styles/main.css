@@ -1188,6 +1188,13 @@ a {
   }
 }
 
+@media (max-width: 850px) {
+  .input {
+    height: 40px;
+    width: 335px;
+  }
+}
+
 .footer {
   padding: 30px 30px 15px 30px;
   background-color: #0D0D0D;
