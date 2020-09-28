@@ -824,6 +824,29 @@ a {
   }
 }
 
+@media (max-width: 650px) {
+  .promo {
+    padding-left: 20px;
+  }
+  .promo__cap {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    top: -10px;
+  }
+  .promo__discount {
+    width: 100px;
+    height: 60px;
+  }
+  .promo__text {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1141,6 +1164,33 @@ a {
   .person__image {
     width: 500px;
     height: 300px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .person__image--jBalvin {
+    width: 530px;
+  }
+}
+
+@media (max-width: 650px) {
+  .person {
+    width: 100%;
+  }
+  .person--jBalvin {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .person--karolG {
+    margin-top: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .person__image {
+    width: 500px;
+    height: 250px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;

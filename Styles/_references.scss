@@ -65,4 +65,30 @@
     
     }
 }
+
+@media (max-width: 650px) {
+
+    width: 100%;
+
+    &--jBalvin{
+        align-items: flex-start;
+    }
+
+    &--karolG{
+        margin-top: 20px;
+        align-items: flex-end;
+    }
+
+
+    &__image{
+        width: 500px;
+        height: 250px;
+        order: 1;
+    
+        &--jBalvin{
+            width: 530px;
+        }
+    
+    }
+}
 }

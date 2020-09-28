@@ -102,3 +102,32 @@
     }
 
 }
+
+@media (max-width: 650px){
+
+    .promo{
+        padding-left: 20px;
+
+
+        &__cap{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            right: 10px;
+            top: -10px;
+        }
+    
+        &__discount{
+            width: 100px;
+            height: 60px;
+        }
+
+        &__text{
+            font-family: 'Dosis', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+}
