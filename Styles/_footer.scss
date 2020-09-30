@@ -127,3 +127,17 @@
        }
 }
 }
+
+@media(max-width: 400px){
+    .footer{
+        &__nav{
+            margin: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        &__itemsWrap{
+            margin: 0px;
+        }       
+    }
+}

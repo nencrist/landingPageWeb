@@ -60,6 +60,34 @@
             top: 0px;
         }
     }
+
+    @media(max-width: 400px){
+        &__interactive{
+            width: 80%;
+        }
+
+        &__interactiveLogo{
+            width: 80%;
+        }
+
+        &__firstChar{
+            margin-top: 20px;
+            width: 80%;
+            height: 80%;
+        }
+    
+        &__secondChar{
+            margin-top: 20px;
+            width: 80%;
+            height: 80%;
+        }
+    
+        &__thirdChar{
+            margin-top: 20px;
+            width: 80%;
+            height: 80%;
+        }
+    }
 }
 
 

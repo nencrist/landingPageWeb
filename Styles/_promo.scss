@@ -131,3 +131,39 @@
     }
 
 }
+
+@media (max-width: 400px){
+
+    .promo{
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 40px;
+
+
+        &__cap{
+            display: none;
+        }
+
+        &__sidesCont{
+            width: 0%;
+        }
+
+        &__centerCont{
+            width: 100%;
+        }
+    
+        &__discount{
+            display: none;
+        }
+
+        &__text{
+            text-align: center;
+            margin-left: 0px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+}

@@ -171,3 +171,37 @@ a{
     }
 
 }
+
+@media(max-width: 400px){
+    h1{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .normalText{
+        font-size: 18px;
+
+        &--negative{
+            font-size: 15px;
+        }
+
+        &--footerDownGrey{
+            color: $footerGrey;
+            font-size: 14px;
+            margin-right: 0px;
+        }
+    
+        &--footerDown{
+            color: white;
+            font-size: 14px;
+            margin-right: 0px;
+        }
+    }
+}

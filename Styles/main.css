@@ -388,6 +388,34 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .normalText {
+    font-size: 18px;
+  }
+  .normalText--negative {
+    font-size: 15px;
+  }
+  .normalText--footerDownGrey {
+    color: #B3B3B3;
+    font-size: 14px;
+    margin-right: 0px;
+  }
+  .normalText--footerDown {
+    color: white;
+    font-size: 14px;
+    margin-right: 0px;
+  }
+}
+
 .mainHeader {
   width: 100%;
   display: -webkit-box;
@@ -799,6 +827,19 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .btn {
+    width: 110px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .btn--secondary {
+    width: 250px;
+    height: 35px;
+    margin: 0;
+  }
+}
+
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,6 +951,34 @@ a {
     height: 60px;
   }
   .promo__text {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+  }
+  .promo__cap {
+    display: none;
+  }
+  .promo__sidesCont {
+    width: 0%;
+  }
+  .promo__centerCont {
+    width: 100%;
+  }
+  .promo__discount {
+    display: none;
+  }
+  .promo__text {
+    text-align: center;
+    margin-left: 0px;
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -1156,6 +1225,30 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .image__interactive {
+    width: 80%;
+  }
+  .image__interactiveLogo {
+    width: 80%;
+  }
+  .image__firstChar {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+  }
+  .image__secondChar {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+  }
+  .image__thirdChar {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+  }
+}
+
 .references {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1270,6 +1363,33 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .person {
+    width: 100%;
+  }
+  .person--jBalvin {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .person--karolG {
+    margin-top: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .person__image {
+    width: 500px;
+    height: 190px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .person__image--jBalvin {
+    width: 530px;
+  }
+}
+
 .subscribe {
   padding: 20px 30px;
   display: -webkit-box;
@@ -1317,6 +1437,14 @@ a {
   .input {
     height: 40px;
     width: 335px;
+  }
+}
+
+@media (max-width: 400px) {
+  .input {
+    width: 250px;
+    height: 35px;
+    margin: 0px;
   }
 }
 
@@ -1504,6 +1632,17 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__nav {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__itemsWrap {
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
