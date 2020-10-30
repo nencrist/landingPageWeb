@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
-<body class="landingBody">
+<body>
     <header class="mainHeader">
         <section class="mainHeader__logoCont">
             <img class="mainHeader__logo" src="./Images/logo.png" alt="logo">
@@ -26,30 +26,21 @@
         </nav>
     </header>
     <main>
-        <h2>Detalle de Producto</h2>
-        <article>
-            <section>
+        <form class="form">
+            <label class="form__label"> 
+                Nombre del Producto
+                <input name="name" type="text">
+            </label>
+            <label class="form__label">
+                Precio
+                <input type="text">
+            </label>
+            <label class="form__label">
+                Imagen
+                <input type="file">
+            </label>
 
-            </section>
-            <section>
-                <div>
-                    <p>Detalles</p>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <p>Titulo</p>
-                <p>Precio</p>
-                <div>
-                    <button></button>
-                    <button></button>
-                </div>
-                <button></button>
-            </section>
-        </article>
-
+        </form>
     </main>
     <footer class="footer">
         <section class="footer__up">
@@ -86,5 +77,10 @@
             </section>
         </section>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+     <script src="./Scripts/productos.js"></script>
+    
 </body>
 </html>
