@@ -21,4 +21,26 @@ var firebaseConfig = {
   ];
 
   const productsList = document.querySelector('.productsList');
-  const newProduct =   document.createElement('article');
+
+  function renderProducts (list){
+    //creacion de los productos a nivel visual
+    list.forEach(function (elem) {
+      const newProduct =  document.createElement('article');
+      newProduct.classList.add('product');
+       
+      newProduct.innerHTML = `
+      <img class="product__img" src="${elem.img}" alt="">
+      <div class="product__info">
+          <p class="title">${elem.name}</p>
+          <p class="product__price">$ ${elem.price}</p>
+      </div>
+      `;
+    
+      productsList.appendChild(newProduct);
+    });
+  }
+
+  //render inicial de todos los productos
+  renderProducts(products);
+  
+  

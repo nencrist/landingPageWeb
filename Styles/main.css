@@ -1645,4 +1645,52 @@ a {
     margin: 0px;
   }
 }
+
+.productsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin-top: 30px;
+}
+
+.product {
+  width: 20%;
+}
+
+.product__img {
+  border-radius: 10px;
+}
+
+.mainBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.filter {
+  width: 25%;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=main.css.map */
