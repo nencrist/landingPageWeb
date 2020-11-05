@@ -1,15 +1,37 @@
 .productsList{
     display: flex;
+    flex-wrap: wrap;
     width: 75%;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
 .product{
 
     width: 20%;
+    margin: 10px;
+    position: relative;
+
     &__img{
         border-radius: 10px;
 
+        &__addBtn{
+            position: absolute;
+            right: 7px;
+            bottom: 5px;
+        }
+
+    }
+
+    &__name{
+        font-weight: 500;
+        font-family: 'Dosis', sans-serif;
+        font-size: 21px;
+    }
+
+    &__price{
+        font-size: 21px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
     }
 }

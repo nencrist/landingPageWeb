@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
 
     console.log(newProduct);
 
-    db.collection("products").add(newProduct)
+    productsRef.add(newProduct)
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
     })

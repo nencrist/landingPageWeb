@@ -10,8 +10,9 @@
        
       newProduct.innerHTML = `
       <img class="product__img" src="${elem.img}" alt="">
+      <img class="product__img__addBtn" src="./Images/addBtn.png" alt="">
       <div class="product__info">
-          <p class="title">${elem.name}</p>
+          <p class="product__name">${elem.name}</p>
           <p class="product__price">$ ${elem.price}</p>
       </div>
       `;
@@ -20,12 +21,11 @@
     });
   }
 
-var products = [];
-
 //aqui llamo los productos de la base de datos
 
 function getProducts() {
-  db.collection("products").get().then((querySnapshot) => {
+  productsRef.onSnapshot(function (querySnapshot) {
+    const products = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
