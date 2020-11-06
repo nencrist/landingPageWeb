@@ -25,28 +25,20 @@
            </section>
         </nav>
     </header>
-    <main>
-        <h2>Detalle de Producto</h2>
-        <article>
-            <section>
+    <main class="mainBody mainBody--details">
+        <h3>Detalle de Producto</h3>
+        <article class="row">
+            <section class="row__col">
 
             </section>
-            <section>
-                <div>
-                    <p>Detalles</p>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
+            <section class="row__col">
+                <img class="product__img" src="" alt="producto">
             </section>
-            <section>
-                <p>Titulo</p>
-                <p>Precio</p>
+            <section class="row__col">
                 <div>
-                    <button></button>
-                    <button></button>
+                    <p class="normalText">Nombre</p>
+                    <p class="title">Precio</p>
                 </div>
-                <button></button>
             </section>
         </article>
 
@@ -86,5 +78,11 @@
             </section>
         </section>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="./Scripts/firebase.js"></script>
+    <script src="./Scripts/productDetails.js"></script>
+
 </body>
 </html>

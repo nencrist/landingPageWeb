@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary Trend - Productos</title>
+    <title>Visonary Trend - Login</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
-<body class="landingBody">
+<body>
     <header class="mainHeader">
         <section class="mainHeader__logoCont">
             <img class="mainHeader__logo" src="./Images/logo.png" alt="logo">
@@ -21,63 +21,29 @@
             <input class="mainHeader__input" type="text" name="" id="" placeholder="Search">
             <img class="mainHeader__searchIcon" src="./Images/searchIcon.png" alt="searchIcon">
             <img class="mainHeader__menuIcon" src="./Images/menu.png" alt="menuIcon">
-            <a class="mainHeader__navItem mainHeader__navItem--right " href="./login.html"><p>Inicia Sesión</p></a>
+            <a class="login" href="./login.html"><p>Inicia Sesión</p></a>
             <img class="mainHeader__bagIcon" src="./Images/bagIcon.png" alt="bagIcon">
            </section>
         </nav>
     </header>
     <main class="mainBody">
-        <aside class="filter">
-            <section class="filter__filter">
-                <div class="filter__title">
-                    <h3 class="title title--filter">Filtrar</h3>
-                </div>
-                <div class="filter__content">
-                    <div class="filter__line">
-                        <p class="normalText">Gorra Beisbol</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
-                    </div>
-                    <div class="filter__line">
-                        <p class="normalText">Gorra Malla</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
-                    </div>
-                   <div class="filter__line">
-                    <p class="normalText">Gorra Basica</p>
-                    <input class="input__checkBox" type="checkbox" name="" id="">
-                   </div>
-                    <p class="normalText">Color</p>
-                </div>
-                    
-            </section>
-            <section class="filter__sort">
-                <div class="filter__title">
-                    <h3 class="title title--filter">Ordenar</h3>
-                </div>
-                <div class="filter__content">
-                    <div class="filter__line">
-                        <p class="normalText">Menor precio</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
-                    </div>
-                    <div class="filter__line">
-                        <p class="normalText">Mayor precio</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
-                    </div>
-                    <div class="filter__line">
-                        <p class="normalText">Más vendido</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
-                    </div>                    
-                </div>
-            </section>
-        </aside>
-        <section class="productContainer">
-            <div class="titles">
-                <img class="titles__background" src="./Images/titleBackground.png" alt="background">
-                <h3 class="titles__text">Productos</h3>
+        <section class="grayBackground">
+            <div class="modal">
+                <form class="form">
+                    <h3>Iniciar Sesión</h3>
+                    <label class="form__label"> 
+                        <p class="normalText">Correo</p> 
+                        <input class="input" name="email" type="email">
+                    </label>
+                    <label class="form__label">
+                        <p class="normalText">Contraseña</p>
+                        <input class="input" name="passWord" type="password">
+                    </label>
+                    <button class="form__btn">Iniciar Sesión</button>
+                </form>
             </div>
-            <section class="productsList">
-            </section>
         </section>
-        
+
     </main>
     <footer class="footer">
         <section class="footer__up">
@@ -114,11 +80,8 @@
             </section>
         </section>
     </footer>
-
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-    <script src="./Scripts/firebase.js"></script>
-    <script src="./Scripts/productos.js"></script>
+    
+    <script src="./Scripts/modal.js"></script>
     
 </body>
 </html>

@@ -43,6 +43,17 @@
 
     }
 
+    .login{
+        margin-right: 30px;
+        color: $textBlack;
+        
+        p{
+            font-weight: 500;
+            font-family: 'Dosis', sans-serif;
+            font-size: 22px;
+        }
+    }
+
     &__inputDiv {
         width: 50%;
         display: flex;

@@ -1,6 +1,12 @@
 .mainBody{
     display: flex;
     width: 100%;
+    padding: 30px;
+
+    &--details{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .title{
