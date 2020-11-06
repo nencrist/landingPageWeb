@@ -28,32 +28,56 @@
     </header>
     <main class="mainBody">
         <aside class="filter">
-            <section>
-                <div>
-                    <h3>Filtrar</h3>
+            <section class="filter__filter">
+                <div class="filter__title">
+                    <h3 class="title title--filter">Filtrar</h3>
                 </div>
-                    <p>Gorra Beisbol</p>
-                    <input type="checkbox" name="" id="">
-                    <p>Gorra Malla</p>
-                    <input type="checkbox" name="" id="">
-                    <p>Gorra Basica</p>
-                    <input type="checkbox" name="" id="">
-                    <p>Color</p>
+                <div class="filter__content">
+                    <div class="filter__line">
+                        <p class="normalText">Gorra Beisbol</p>
+                        <input class="input__checkBox" type="checkbox" name="" id="">
+                    </div>
+                    <div class="filter__line">
+                        <p class="normalText">Gorra Malla</p>
+                        <input class="input__checkBox" type="checkbox" name="" id="">
+                    </div>
+                   <div class="filter__line">
+                    <p class="normalText">Gorra Basica</p>
+                    <input class="input__checkBox" type="checkbox" name="" id="">
+                   </div>
+                    <p class="normalText">Color</p>
+                </div>
+                    
             </section>
-            <section>
-                <div>
-                    <h3>Ordenar</h3>
+            <section class="filter__sort">
+                <div class="filter__title">
+                    <h3 class="title title--filter">Ordenar</h3>
                 </div>
-                    <p>Menor precio</p>
-                    <input type="checkbox" name="" id="">
-                    <p>Mayor precio</p>
-                    <input type="checkbox" name="" id="">
-                    <p>Más vendido</p>
-                    <input type="checkbox" name="" id="">
+                <div class="filter__content">
+                    <div class="filter__line">
+                        <p class="normalText">Menor precio</p>
+                        <input class="input__checkBox" type="checkbox" name="" id="">
+                    </div>
+                    <div class="filter__line">
+                        <p class="normalText">Mayor precio</p>
+                        <input class="input__checkBox" type="checkbox" name="" id="">
+                    </div>
+                    <div class="filter__line">
+                        <p class="normalText">Más vendido</p>
+                        <input class="input__checkBox" type="checkbox" name="" id="">
+                    </div>                    
+                </div>
             </section>
         </aside>
-        <section class="productsList">
+        <section class="productContainer">
+            <div class="titles">
+                <img class="titles__background" src="./Images/titleBackground.png" alt="background">
+                <h3 class="titles__text">Productos</h3>
+            </div>
+            <section class="productsList">
+            </section>
         </section>
+        
     </main>
     <footer class="footer">
         <section class="footer__up">

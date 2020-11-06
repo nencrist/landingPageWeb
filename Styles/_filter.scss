@@ -1,3 +1,23 @@
 .filter{
     width: 25%;
+    padding-left: 30px;
+    margin-top: 55px;
+    padding-right: 30px;
+
+    &__title{
+        border-bottom: black 1px solid;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+        align-items: center;
+    }
 }

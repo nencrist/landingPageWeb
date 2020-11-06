@@ -1,8 +1,31 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.titles{
+    position: relative;
+    margin-top: 20px;
+
+    &__background{
+        width: 30%;
+    }
+
+    &__text{
+        color: white;
+        position: absolute;
+        top: 0px;
+        left: 25px;
+    }
+
+}
+
 .productsList{
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
 
 }
 

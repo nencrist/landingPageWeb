@@ -5,6 +5,11 @@
     margin-bottom: 20px;
     border-width: 1px;
 
+    &__checkBox{
+        width: 18px;
+        height: 18px;
+    }
+
     @media(max-width: 1150px){
         height: 35px;
         width: 270px;

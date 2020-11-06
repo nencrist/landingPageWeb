@@ -300,6 +300,10 @@ a {
   margin-top: 20px;
 }
 
+.title--filter {
+  font-size: 23px;
+}
+
 @media (max-width: 1300px) {
   h1 {
     font-size: 40px;
@@ -1435,6 +1439,11 @@ a {
   border-width: 1px;
 }
 
+.input__checkBox {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 1150px) {
   .input {
     height: 35px;
@@ -1655,14 +1664,41 @@ a {
   }
 }
 
+.productContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+}
+
+.titles {
+  position: relative;
+  margin-top: 20px;
+}
+
+.titles__background {
+  width: 30%;
+}
+
+.titles__text {
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+}
+
 .productsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 75%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .product {
@@ -1700,8 +1736,57 @@ a {
   width: 100%;
 }
 
+.title {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+}
+
+.title--negative {
+  color: white;
+  margin-top: 20px;
+}
+
+.title--filter {
+  font-size: 22px;
+}
+
 .filter {
   width: 25%;
+  padding-left: 30px;
+  margin-top: 55px;
+  padding-right: 30px;
+}
+
+.filter__title {
+  border-bottom: black 1px solid;
+}
+
+.filter__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form {
