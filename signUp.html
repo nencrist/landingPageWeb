@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary Trend - Sign Up</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <section class="mainHeader__logoCont">
+            <img class="mainHeader__logo" src="./Images/logo.png" alt="logo">
+        </section>
+        <nav class="mainHeader__nav">
+            <section class="mainHeader__navDiv">
+                <a class="mainHeader__navItem" href=""><p>Inicio</p></a> 
+                <a class="mainHeader__navItem" href=""><p>Productos</p></a> 
+                <a class="mainHeader__navItem" href=""><p>Sobre nosotros</p></a>
+            </section>
+           <section class="mainHeader__inputDiv">
+            <input class="mainHeader__input" type="text" name="" id="" placeholder="Search">
+            <img class="mainHeader__searchIcon" src="./Images/searchIcon.png" alt="searchIcon">
+            <img class="mainHeader__menuIcon" src="./Images/menu.png" alt="menuIcon">
+            <a class="login" href="./login.html"><p>Inicia Sesión</p></a>
+            <img class="mainHeader__bagIcon" src="./Images/bagIcon.png" alt="bagIcon">
+           </section>
+        </nav>
+    </header>
+    <main class="mainBody">
+        <section class="grayBackground">
+            <div class="modal">
+                <form class="form signUp">
+                    <h3>Registro</h3>
+                    <label class="form__label"> 
+                        <p class="normalText">Nombre</p> 
+                        <input class="input" name="name" type="text">
+                    </label>
+                    <label class="form__label"> 
+                        <p class="normalText">Correo</p> 
+                        <input required class="input" name="email" type="email">
+                    </label>
+                    <label class="form__label">
+                        <p class="normalText">Contraseña</p>
+                        <input required class="input" name="passWord" type="password">
+                    </label>
+                    <!--<label class="form__label">
+                        <p class="normalText">Verificar Contraseña</p>
+                        <input class="input" name="verifiedPassWord" type="password">
+                    </label>-->
+
+                    <p class="form__error hidden">Ya existe un usuario registrado con este correo.</p>
+                    
+                    <button type="submit" class="form__btn">Registrarme</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="footer__up">
+            <section class="footer__itemsWrap">
+                <img class="footer__imageLogo" src="./Images/footerLogo.png" alt="logoFooter">
+                <p class="normalText normalText--grey">Nuestra misión es proporcionar un producto
+                    de excelente calidad, que sea ascequible
+                    para todo el mundo y con el cual la gente
+                    se sienta cómoda y exclusiva.</p>
+            </section>
+            <section class="footer__navWrap">
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Acerca de</p></a>
+                    <a href=""><p class="normalText normalText--negative">Noticias</p></a>
+                    <a href=""><p class="normalText normalText--negative">Nuestro Equipo</p></a>
+                </section>
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Nuestros Patrocinadores</p></a>
+                    <a href=""><p class="normalText normalText--negative">Centro de Ayuda</p></a>
+                    <a href=""><p class="normalText normalText--negative">Preguntas Frecuentes</p></a>
+                </section>
+            </section>
+        </section>
+        <section class="footer__down">
+            <section class="footer__navWrap footer__navWrap--down" >
+                <a href=""><p class="normalText normalText--footerDownGrey">2020 Visionary Trend</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Terminos de Uso</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Politica de Privacidad</p></a>
+            </section>
+            <section class="footer__socialWrap">
+                <img class="image__social" src="./Images/facebookLink.png" alt="facebook">
+                <img class="image__social" src="./Images/twitterLink.png" alt="twitter">
+                <img class="image__social" src="./Images/instaLink.png" alt="instagram">
+            </section>
+        </section>
+    </footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./Scripts/firebase.js"></script>
+    <script src="./Scripts/signUp.js"></script>
+    <script src="./Scripts/modal.js"></script>
+    
+</body>
+</html>

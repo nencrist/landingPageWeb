@@ -1,4 +1,7 @@
 
+  var db = firebase.firestore();
+  const productsRef = db.collection("products");
+
   const productsList = document.querySelector('.productsList');
 
    //creacion de los productos a nivel visual
