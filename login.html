@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visonary Trend - Login</title>
+    <title>Visionary Trend - Login</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
 <body>
@@ -29,16 +29,23 @@
     <main class="mainBody">
         <section class="grayBackground">
             <div class="modal">
-                <form class="form">
+                <form class="form login">
                     <h3>Iniciar Sesión</h3>
                     <label class="form__label"> 
                         <p class="normalText">Correo</p> 
-                        <input class="input" name="email" type="email">
+                        <input required class="input" name="email" type="email">
                     </label>
                     <label class="form__label">
                         <p class="normalText">Contraseña</p>
-                        <input class="input" name="passWord" type="password">
+                        <input required class="input" name="passWord" type="password">
                     </label>
+                    <!--<label class="form__label">
+                        <p class="normalText">Verificar Contraseña</p>
+                        <input class="input" name="verifiedPassWord" type="password">
+                    </label>-->
+
+                    <p class="form__error hidden">Información inválida.</p>
+                    
                     <button type="submit" class="form__btn">Iniciar Sesión</button>
                 </form>
             </div>
@@ -81,6 +88,10 @@
         </section>
     </footer>
     
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./Scripts/firebase.js"></script>
+    <script src="./Scripts/login.js"></script>
     <script src="./Scripts/modal.js"></script>
     
 </body>

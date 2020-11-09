@@ -1,0 +1,24 @@
+.auth{
+    &__without{
+
+        p{
+            color: $textBlack;
+            font-family: 'Dosis', sans-serif;
+            margin-right: 30px;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        
+    }
+
+    &__with{
+        margin-right: 30px;
+
+        p{
+            color: $textBlack;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+        }
+    }
+}

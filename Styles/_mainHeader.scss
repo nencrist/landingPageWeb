@@ -24,16 +24,13 @@
     &__navDiv{
         display: flex;
         width: 50%;
+        align-items: center;
     }
 
 
     &__navItem{
         margin-right: 50px;
         color: $textBlack;
-
-        &--right{
-            margin-right: 30px;
-        }
 
         p{
             font-weight: 500;
@@ -59,6 +56,7 @@
         display: flex;
         justify-content: flex-end;
         position: relative;
+        align-items: center;
     }
 
     &__input{
