@@ -1,3 +1,7 @@
+var db = firebase.firestore();
+const productsRef = db.collection("products");
+var storageRef = firebase.storage().ref();
+
 window.addEventListener('load', function () {
 
 const productId = location.search.replace('?', '');

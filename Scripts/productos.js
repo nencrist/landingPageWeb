@@ -1,6 +1,7 @@
 
   var db = firebase.firestore();
   const productsRef = db.collection("products");
+  var storageRef = firebase.storage().ref();
 
   const productsList = document.querySelector('.productsList');
 
@@ -8,21 +9,32 @@
   function renderProducts (list) {
     productsList.innerHTML = '';
     list.forEach(function (elem) {
-      const newProduct =  document.createElement('a');
+      const newProduct =  document.createElement('article');
       newProduct.classList.add('product');
 
       const url = `detalle.html?${elem.id}`;
-      newProduct.setAttribute('href', url);
+      //newProduct.setAttribute('href', url);
        
       newProduct.innerHTML = `
-      <img class="product__img" src="${elem.img}" alt="">
-      <img class="product__img__addBtn" src="./Images/addBtn.png" alt="">
+      <a href="${url}"><img class="product__img" src="${elem.img}" alt="">
       <div class="product__info">
           <p class="product__name">${elem.name}</p>
           <p class="product__price">$ ${elem.price}</p>
-      </div>
+      </div></a>
+      <img class="product__img__addBtn" src="./Images/addBtn.png" alt="">
       `;
-    
+
+      if(elem.img){
+        storageRef.child(elem.img).getDownloadURL().then(function(url) {
+
+          // Or inserted into an <img> element:
+          var img = newProduct.querySelector('img');
+          img.src = url;
+        }).catch(function(error) {
+          // Handle any errors
+        });
+      }
+     
       productsList.appendChild(newProduct);
     });
   }

@@ -1,14 +1,34 @@
 
-//aqui agregamos productos a la base de datos
+var imagePath = '';
+
+var db = firebase.firestore();
+const productsRef = db.collection("products");
 
 const form = document.querySelector('.form');
+
+  form.img.addEventListener('change', function(){
+
+    var storageRef = firebase.storage().ref();
+    var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*13418623)}.png`);
+
+    var file = form.img.files[0] // use the Blob or File API
+    newImageRef.put(file).then(function(snapshot) {
+    console.log(snapshot);
+    console.log('Uploaded a blob or file!');
+    imagePath = snapshot.metadata.fullPath;
+});
+
+});
+
+//aqui agregamos productos a la base de datos
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const newProduct = {
       name: form.name.value,
       price: form.price.value,
-      img: form.img.value
+      img: imagePath,
     };
 
     console.log(newProduct);

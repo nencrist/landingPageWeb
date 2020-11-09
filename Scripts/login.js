@@ -6,7 +6,6 @@ const login = document.querySelector('.login');
     
         const email = login.email.value;
         const passWord = login.passWord.value;
-        alert("hola");
     
         firebase.auth().signInWithEmailAndPassword(email, passWord)
         .then(function () {
