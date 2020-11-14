@@ -12,9 +12,21 @@ productsRef.doc(productId).get().then(function (snapshot) {
     const name = document.querySelector('.normalText');
     name.innerText = productInfo.name;
 
-    document.querySelector('.product__img').setAttribute('src', productInfo.img);
+    
     document.querySelector('.title').innerText = productInfo.price;
 
+    if(productInfo.img){
+        storageRef.child(productInfo.img).getDownloadURL().then(function(url) {
+
+          // Or inserted into an <img> element:
+          document.querySelector('.product__img').setAttribute('src', url);
+         
+        }).catch(function(error) {
+          // Handle any errors
+        });
+      }
+
+      
 });
 
 });

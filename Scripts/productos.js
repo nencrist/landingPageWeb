@@ -16,7 +16,7 @@
       //newProduct.setAttribute('href', url);
        
       newProduct.innerHTML = `
-      <a href="${url}"><img class="product__img" src="${elem.img}" alt="">
+      <a href="${url}"><img class="product__img" src="" alt="">
       <div class="product__info">
           <p class="product__name">${elem.name}</p>
           <p class="product__price">$ ${elem.price}</p>
