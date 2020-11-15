@@ -12,6 +12,11 @@ const form = document.querySelector('.form');
     var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*13418623)}.png`);
 
     var file = form.img.files[0] // use the Blob or File API
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function(e) {
+      form.querySelector('.form__previewImg').src = e.target.result;
+    }
     newImageRef.put(file).then(function(snapshot) {
     console.log(snapshot);
     console.log('Uploaded a blob or file!');
@@ -29,6 +34,8 @@ form.addEventListener('submit', function (event) {
       name: form.name.value,
       price: form.price.value,
       img: imagePath,
+      details: form.details.value,
+      color: form.color.value, 
     };
 
     console.log(newProduct);
@@ -42,3 +49,8 @@ form.addEventListener('submit', function (event) {
     });
 
   });
+
+form.addEventListener('reset', function (event){
+  event.preventDefault();
+  location.href = './adminProducts.html';
+});

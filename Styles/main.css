@@ -761,6 +761,10 @@ a {
   margin: 0;
 }
 
+.btn--transparent {
+  background-color: transparent;
+}
+
 .btn__mini {
   width: 35px;
   height: 35px;
@@ -1461,6 +1465,13 @@ a {
   height: 18px;
 }
 
+.input__details {
+  height: 200px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border-width: 1px;
+}
+
 @media (max-width: 1150px) {
   .input {
     height: 35px;
@@ -1831,6 +1842,22 @@ a {
           flex-direction: column;
 }
 
+.form--newPro {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form__img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.form__previewImg {
+  border-radius: 10px;
+}
+
 .form__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1843,7 +1870,7 @@ a {
 }
 
 .form__btn {
-  width: 335px;
+  width: 270px;
   height: 45px;
   background-color: #0D0D0D;
   color: white;
@@ -1852,6 +1879,14 @@ a {
   font-family: 'Dosis', sans-serif;
   border-radius: 6px;
   margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.form__btn--transparent {
+  background-color: transparent;
+  color: #0D0D0D;
+  border: none;
+  margin-right: 20px;
 }
 
 .form__error {

@@ -21,9 +21,9 @@
           <p class="product__name">${elem.name}</p>
           <p class="product__price">$ ${elem.price}</p>
       </div></a>
-      <img class="product__img__addBtn" src="./Images/addBtn.png" alt="">
+      <input type="image" class="product__img__addBtn" src="./Images/addBtn.png" />
       `;
-
+    
       if(elem.img){
         storageRef.child(elem.img).getDownloadURL().then(function(url) {
 
@@ -34,9 +34,11 @@
           // Handle any errors
         });
       }
-     
+
       productsList.appendChild(newProduct);
     });
+
+
   }
 
 //aqui llamo los productos de la base de datos

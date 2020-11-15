@@ -1,6 +1,8 @@
 var db = firebase.firestore();
 const productsRef = db.collection("products");
 var storageRef = firebase.storage().ref();
+const usersRef = db.collection("users");
+const addToCarBtn = document.querySelector('.btn');
 
 window.addEventListener('load', function () {
 
@@ -25,8 +27,10 @@ productsRef.doc(productId).get().then(function (snapshot) {
           // Handle any errors
         });
       }
-
       
 });
 
 });
+
+
+

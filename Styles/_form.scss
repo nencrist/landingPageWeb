@@ -1,7 +1,19 @@
 .form{
     display: flex;
     flex-direction: column;
+
+    &--newPro{
+        flex-direction: row;
+    }
     
+    &__img{
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    &__previewImg{
+        border-radius: 10px;
+    }
 
     &__label {
         display: flex;
@@ -9,8 +21,9 @@
         margin-top: 30px;
     }
 
+    
     &__btn{
-        width: 335px;
+        width: 270px;
         height: 45px;
         background-color: $btnBlack;
         color: white;
@@ -19,6 +32,14 @@
         font-family: 'Dosis', sans-serif;
         border-radius: 6px;
         margin-top: 30px;
+        margin-bottom: 20px;
+
+        &--transparent{
+            background-color: transparent;
+            color: $btnBlack;
+            border: none;
+            margin-right: 20px;
+        }
 
     }
 

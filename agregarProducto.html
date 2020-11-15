@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visionary Trend - Agregar Producto</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
 <body class="landingBody">
@@ -25,22 +25,39 @@
            </section>
         </nav>
     </header>
-    <main>
-        <form class="form">
-            <h3>Nuevo Producto</h3>
+    <main class="mainBody mainBody--details">
+        <h3>Nuevo Producto</h3>
+        <form class="form form--newPro">
+            <section class="form__img">
+                <label class="form__label">
+                    <p class="title">Imagen</p>
+                    <img class="form__previewImg" src="" alt="">
+                    <input class="input__img" name="img" type="file">
+                </label>
+            </section>
+           <section class="form__inputs">
             <label class="form__label"> 
-                <p>Nombre</p> 
+                <p class="title">Nombre</p> 
                 <input class="input" name="name" type="text">
             </label>
             <label class="form__label">
-                <p>Precio</p>
+                <p class="title">Precio</p>
                 <input class="input" name="price" type="text">
             </label>
             <label class="form__label">
-                <p>Imagen</p>
-                <input class="input" name="img" type="file">
+                <p class="title">Color</p>
+                <input class="input" name="color" type="text">
             </label>
-            <button type="submit" class="form__btn">Publicar</button>
+            <label class="form__label">
+                <p class="title">Detalles</p>
+                <input class="input__details" name="details" type="text">
+            </label>
+            <div class="form__btns">
+                <button type="reset" class="form__btn form__btn--transparent">Cancelar</button>
+                <button type="submit" class="form__btn">Publicar</button>
+            </div>
+           </section>
+           
         </form>
     </main>
     <footer class="footer">
