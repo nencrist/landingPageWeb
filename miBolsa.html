@@ -25,15 +25,20 @@
            </section>
         </nav>
     </header>
-    <main>
-        <h2>Mi Bolsa</h2> 
-        <article>
-            <p>Producto</p>
-            <p>Envío</p>
-            <p>Precio</p>
-            <p>Cantidad</p>
-            <p>Total</p>
-        </article>
+    <main class="mainBody mainBody--details">
+        <h3>Mi Bolsa</h3>
+            <article class="carContainer">
+                <section class="car__info">
+                    <p class="title car__title">Producto</p>
+                    <p class="title car__title">Envío</p>
+                    <p class="title car__title">Precio</p>
+                    <p class="title car__title">Cantidad</p>
+                    <p class="title car__title">Total</p>
+                </section>
+               <section class="car__list">
+
+               </section>
+            </article>
         <section>
             <p>Resumen de la Compra</p>
             <p>Subtotal</p>
@@ -77,5 +82,14 @@
             </section>
         </section>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="./Scripts/firebase.js"></script>
+    <script src="./Scripts/car.js"></script>
+    <script src="./Scripts/auth.js"></script>
+    <script src="./Scripts/profile.js"></script>
 </body>
 </html>

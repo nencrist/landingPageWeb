@@ -1,7 +1,7 @@
 
   var db = firebase.firestore();
-  const productsRef = db.collection("products");
   const usersRef = db.collection("users");
+  const carRef = usersRef.doc(userInfo.uid).collection('shoppingCar');
   var storageRef = firebase.storage().ref();
 
 

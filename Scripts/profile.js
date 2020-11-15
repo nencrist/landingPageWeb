@@ -12,5 +12,6 @@ authSignOut.addEventListener('click', function(event) {
     event.preventDefault();
     firebase.auth().signOut();
     profileInfo.classList.add('hidden');
+    location.reload();
 
 });
