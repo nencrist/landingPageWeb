@@ -2,10 +2,10 @@ const authWithout = document.querySelector('.auth__without');
 const authWith = document.querySelector('.auth__with');
 const authProfileName = document.querySelector('.auth__profile p');
 const searchIcon = document.querySelector('.mainHeader__searchIcon');
-var userInfo; 
 
 
 firebase.auth().onAuthStateChanged(function(user) {
+
     //usuario ya inicio sesion o ya se registro
     if(user) {
         authWith.classList.remove('hidden');
@@ -19,10 +19,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         usersRef.doc(user.uid).get().then(function (doc){
             if(doc.exists) {
                 const data = doc.data();
-                userInfo = data;
-                userInfo.uid = user.uid;
                 authProfileName.innerText = data.name;
-
 
                 const showAdmin = document.querySelectorAll('.showAdmin');
                 const addToCarBtn = document.querySelector('.product__addBtn');
@@ -34,6 +31,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         addToCarBtn.classList.add('hidden');
                 }
             }
+
         });
 
     }else {
@@ -44,4 +42,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 
         searchIcon.classList.remove('move');
     }
+
+    window.localStorage.setItem("userId", user.uid);
   });

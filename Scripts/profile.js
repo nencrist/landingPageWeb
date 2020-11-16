@@ -13,5 +13,6 @@ authSignOut.addEventListener('click', function(event) {
     firebase.auth().signOut();
     profileInfo.classList.add('hidden');
     location.reload();
+    window.localStorage.removeItem('userId');
 
 });

@@ -1,31 +1,28 @@
 
   var db = firebase.firestore();
   const usersRef = db.collection("users");
-  const carRef = usersRef.doc(userInfo.uid).collection('shoppingCar');
   var storageRef = firebase.storage().ref();
 
+  var userId = localStorage.getItem('userId')
+  const carRef = usersRef.doc(userId).collection('shoppingCar');
 
-  const productsList = document.querySelector('.productsList');
+  const carList = document.querySelector('.car__list');
 
    //creacion de los productos a nivel visual
   function renderProducts (list) {
-    productsList.innerHTML = '';
+    carList.innerHTML = '';
     list.forEach(function (elem) {
       const newProduct =  document.createElement('article');
-      newProduct.classList.add('product');
+      newProduct.classList.add('carProduct');
 
       const url = `detalle.html?${elem.id}`;
       //newProduct.setAttribute('href', url);
        
       newProduct.innerHTML = `
-      <a href="${url}"><img class="product__img" src="" alt="">
-      <div class="product__info">
-          <p class="product__name">${elem.name}</p>
-          <p class="product__price">$ ${elem.price}</p>
-      </div></a>
-      <button class="product__addBtn"> Agregar a carrito </button>
-      <button class="product__adminBtn hidden showAdmin"> Editar </button>
-      <button class="product__adminBtn hidden showAdmin"> Eliminar</button>
+      <a href="${url}"><img class="carProduct__img" src="" alt=""></a>
+      <p class="carProduct__name">${elem.name}</p>
+      <p class="carProduct__price">$ ${elem.price}</p>
+      <button class="carProduct__delete"> Eliminar</button>
       `;
     
       if(elem.img){
@@ -39,31 +36,7 @@
         });
       }
 
-      const addBtn = newProduct.querySelector('.product__addBtn');
-
-      addBtn.addEventListener('click', function(event){
-        event.preventDefault();
-        
-        if(userInfo){
-          usersRef.doc(userInfo.uid).collection('shoppingCar').doc(elem.id).set(
-            {
-              name: elem.name,
-              price: elem.price,
-              img: elem.img,
-            }
-
-          ).then(function(){
-            alert('agregado');
-          }).catch(function(error){
-            console.log(error.message);
-          })
-
-        } else {
-          alert('No has iniciado sesión')
-        }
-      });
-
-      productsList.appendChild(newProduct);
+      carList.appendChild(newProduct);
     });
 
 
@@ -71,18 +44,20 @@
 
 //aqui llamo los productos de la base de datos
 
-function getProducts() {
-  productsRef.onSnapshot(function (querySnapshot) {
-    const products = [];
-    querySnapshot.forEach((doc) => {
-        const obj = doc.data();
-        obj.id = doc.id;
-        products.push(obj);
-        console.log(`${doc.id} => ${doc.data()}`);
-    });
+  function getProducts() {
+    carRef.onSnapshot(function (querySnapshot) {
+      var carProducts = [];
+      querySnapshot.forEach((doc) => {
+          const obj = doc.data();
+          obj.id = doc.id;
+          carProducts.push(obj);
+          console.log(`${doc.id} => ${doc.data()}`);
+      });
+  
+      renderProducts(carProducts);
 
-    renderProducts(products);
-});
-}
+  });
+  }
+
   
 getProducts();

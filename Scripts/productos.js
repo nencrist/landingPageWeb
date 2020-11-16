@@ -3,6 +3,7 @@
   const productsRef = db.collection("products");
   const usersRef = db.collection("users");
   var storageRef = firebase.storage().ref();
+  var userId = localStorage.getItem('userId');
 
 
   const productsList = document.querySelector('.productsList');
@@ -44,23 +45,15 @@
       addBtn.addEventListener('click', function(event){
         event.preventDefault();
         
-        if(userInfo){
-          usersRef.doc(userInfo.uid).collection('shoppingCar').doc(elem.id).set(
+          usersRef.doc(userId).collection('shoppingCar').doc(elem.id).set(
             {
               name: elem.name,
               price: elem.price,
               img: elem.img,
             }
 
-          ).then(function(){
-            alert('agregado');
-          }).catch(function(error){
-            console.log(error.message);
-          })
-
-        } else {
-          alert('No has iniciado sesión')
-        }
+          )
+        console.log(userInfo);
       });
 
       productsList.appendChild(newProduct);

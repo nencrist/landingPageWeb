@@ -3,6 +3,8 @@ const productsRef = db.collection("products");
 var storageRef = firebase.storage().ref();
 const usersRef = db.collection("users");
 const addToCarBtn = document.querySelector('.btn');
+var productInfo;
+var userId = localStorage.getItem('userId');
 
 window.addEventListener('load', function () {
 
@@ -10,7 +12,7 @@ const productId = location.search.replace('?', '');
 
 productsRef.doc(productId).get().then(function (snapshot) {
  
-    const productInfo = snapshot.data();
+    productInfo = snapshot.data();
     const name = document.querySelector('.normalText');
     name.innerText = productInfo.name;
 
@@ -28,6 +30,21 @@ productsRef.doc(productId).get().then(function (snapshot) {
         });
       }
       
+});
+
+addToCarBtn.addEventListener('click', function (event){
+  event.preventDefault();
+        
+      
+        usersRef.doc(userId).collection('shoppingCar').doc(productId).set(
+            {
+              name: productInfo.name,
+              price: productInfo.price,
+              img: productInfo.img,
+            }
+
+          );
+  
 });
 
 });
