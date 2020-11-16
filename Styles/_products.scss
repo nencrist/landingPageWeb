@@ -58,7 +58,19 @@
 
     }
 
-    &__adminBtn{
+    &__editBtn{
+        width: 100px;
+        height: 30px;
+        background-color: $btnBlack;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        border-radius: 6px;
+
+    }
+
+    &__deleteBtn{
         width: 100px;
         height: 30px;
         background-color: $btnBlack;

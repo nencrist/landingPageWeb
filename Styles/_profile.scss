@@ -1,0 +1,17 @@
+.profile{
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 500px;
+    padding: 20px;
+
+    &__img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 40px;
+    }
+    
+}

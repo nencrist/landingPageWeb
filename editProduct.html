@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visionary Trend - Agregar Producto</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
 <body class="landingBody">
@@ -33,36 +33,39 @@
         </nav>
     </header>
     <main class="mainBody mainBody--details">
-        <h3>Mi Bolsa</h3>
-            <article class="carContainer">
-                <section class="car__info">
-                    <p class="title car__title">Producto</p>
-                    <p class="title car__title">Envío</p>
-                    <p class="title car__title">Precio</p>
-                    <p class="title car__title">Cantidad</p>
-                    <p class="title car__title">Total</p>
-                </section>
-               <section class="car__list">
-
-               </section>
-            </article>
-        <section class="summaryContainer">
-            <div class="summary">
-                <p class="title title--sum">Resumen de la Compra</p>
-                <div class="summary__div summary__div--sub">
-                    <p class="normalText">SubTotal</p>
-                    <p class="normalText subTotal">$ 0</p>
-                </div>
-                <div class="summary__div">
-                    <p class="title">Total*</p>
-                    <p class="title totalSum">$ 0</p>
-                </div>
-                <div class="summary__div">
-                    <a class="normalText" href="">Seguir Comprando</a>
-                    <button class="btn btn--sum">Finalizar Compra</button>
-                </div>
+        <h3>Editar Producto</h3>
+        <form class="form form--newPro">
+            <section class="form__img">
+                <label class="form__label">
+                    <p class="title">Imagen</p>
+                    <img class="form__previewImg" src="" alt="">
+                    <input class="input__img" name="img" type="file">
+                </label>
+            </section>
+           <section class="form__inputs">
+            <label class="form__label"> 
+                <p class="title">Nombre</p> 
+                <input class="input" name="name" type="text">
+            </label>
+            <label class="form__label">
+                <p class="title">Precio</p>
+                <input class="input" name="price" type="text">
+            </label>
+            <label class="form__label">
+                <p class="title">Color</p>
+                <input class="input" name="color" type="text">
+            </label>
+            <label class="form__label">
+                <p class="title">Detalles</p>
+                <input class="input__details" name="details" type="text">
+            </label>
+            <div class="form__btns">
+                <button type="reset" class="form__btn form__btn--transparent">Cancelar</button>
+                <button type="submit" class="form__btn">Editar</button>
             </div>
-        </section>
+           </section>
+           
+        </form>
         <aside class="profile hidden">
             <img src="./Images/profileIcon.png" alt="profileIcon">
             <p class="normalText">Nombre</p>
@@ -111,7 +114,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
     <script src="./Scripts/firebase.js"></script>
     <script src="./Scripts/auth.js"></script>
-    <script src="./Scripts/car.js"></script>
+    <script src="./Scripts/edit.js"></script>
     <script src="./Scripts/profile.js"></script>
+   
+    
 </body>
 </html>

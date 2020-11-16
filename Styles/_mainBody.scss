@@ -1,5 +1,6 @@
 .landingBody{
     background-color: #F2F2F2;
+    position: relative;
 }
 
 h1{
@@ -58,6 +59,10 @@ a{
 
     &--filter{
         font-size: 23px;
+    }
+
+    &--sum{
+        border-bottom: black solid 1px;
     }
 
 }

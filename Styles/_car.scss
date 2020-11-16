@@ -16,3 +16,81 @@
         margin-right: 200px;
     }
 }
+
+.carProduct{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__img{
+        width: 130px;
+        height: 120px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    &__text{
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+        color: $textBlack;
+        margin-right: 60px;
+    }
+
+    &__price{
+        font-size: 21px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        margin-left: 130px;
+        margin-right: 100px;
+
+        &--total{
+            color:rgb(4, 184, 4);
+        }
+    }
+
+    &__delete{
+        width: 100px;
+        height: 30px;
+        background-color: $btnBlack;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        border-radius: 6px;
+        border: none;
+    }
+}
+
+.summaryContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.summary{  
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
+
+    &__div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &--sub{
+            border-bottom: solid black 1px;
+            margin-bottom: 10px;
+
+        }
+        
+    }
+}

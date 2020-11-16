@@ -244,6 +244,7 @@ input[type=button] {
 
 .landingBody {
   background-color: #F2F2F2;
+  position: relative;
 }
 
 h1 {
@@ -302,6 +303,10 @@ a {
 
 .title--filter {
   font-size: 23px;
+}
+
+.title--sum {
+  border-bottom: black solid 1px;
 }
 
 .hidden {
@@ -771,6 +776,11 @@ a {
 
 .btn--transparent {
   background-color: transparent;
+}
+
+.btn--sum {
+  height: 30px;
+  margin-right: 0px;
 }
 
 .btn__mini {
@@ -1764,7 +1774,18 @@ a {
   margin-right: 30px;
 }
 
-.product__adminBtn {
+.product__editBtn {
+  width: 100px;
+  height: 30px;
+  background-color: #0D0D0D;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  border-radius: 6px;
+}
+
+.product__deleteBtn {
   width: 100px;
   height: 30px;
   background-color: #0D0D0D;
@@ -1967,5 +1988,129 @@ a {
 
 .car__title {
   margin-right: 200px;
+}
+
+.carProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carProduct__img {
+  width: 130px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.carProduct__text {
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  color: #333;
+  margin-right: 60px;
+}
+
+.carProduct__price {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  margin-left: 130px;
+  margin-right: 100px;
+}
+
+.carProduct__price--total {
+  color: #04b804;
+}
+
+.carProduct__delete {
+  width: 100px;
+  height: 30px;
+  background-color: #0D0D0D;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  border-radius: 6px;
+  border: none;
+}
+
+.summaryContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.summary {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 20px;
+}
+
+.summary__div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary__div--sub {
+  border-bottom: solid black 1px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #cccccc;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 500px;
+  padding: 20px;
+}
+
+.profile__img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */

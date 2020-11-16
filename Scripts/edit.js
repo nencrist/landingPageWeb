@@ -1,14 +1,41 @@
-
 var imagePath = '';
+var productInfo;
 
 var db = firebase.firestore();
+const usersRef = db.collection("users");
 const productsRef = db.collection("products");
+var storageRef = firebase.storage().ref();
 
 const form = document.querySelector('.form');
 
+const productId = location.search.replace('?', '');
+
+productsRef.doc(productId).get().then(function (snapshot) {
+ 
+    productInfo = snapshot.data();
+    form.name.value = productInfo.name;
+    form.price.value = productInfo.price;
+    form.color.value = productInfo.color;
+    form.details.value = productInfo.details;
+
+    if(productInfo.img){
+        storageRef.child(productInfo.img).getDownloadURL().then(function(url) {
+
+          // Or inserted into an <img> element:
+          document.querySelector('.form__previewImg').setAttribute('src', url);
+         
+        }).catch(function(error) {
+          // Handle any errors
+        });
+      }
+
+    imagePath = productInfo.img;
+      
+});
+
+
   form.img.addEventListener('change', function(){
 
-    var storageRef = firebase.storage().ref();
     var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*13418623)}.png`);
 
     var file = form.img.files[0] // use the Blob or File API
@@ -25,6 +52,7 @@ const form = document.querySelector('.form');
 
 });
 
+
 //aqui agregamos productos a la base de datos
 
 form.addEventListener('submit', function (event) {
@@ -40,10 +68,10 @@ form.addEventListener('submit', function (event) {
 
     console.log(newProduct);
 
-    productsRef.add(newProduct)
+    productsRef.doc(productId).set(newProduct)
     .then(function(docRef) {
-      alert("El producto se agregó correctamente")
-        console.log("Document written with ID: ", docRef.id);
+        alert("Se editó correctamente");
+        //console.log("Document written with ID: ", docRef.id);
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -53,5 +81,5 @@ form.addEventListener('submit', function (event) {
 
 form.addEventListener('reset', function (event){
   event.preventDefault();
-  location.href = './productos.html';
+  location.href = 'productos.html';
 });

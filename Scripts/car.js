@@ -2,11 +2,16 @@
   var db = firebase.firestore();
   const usersRef = db.collection("users");
   var storageRef = firebase.storage().ref();
+  var envio = 6000;
+  var total;
+  var sumTotal = 0;
 
   var userId = localStorage.getItem('userId')
   const carRef = usersRef.doc(userId).collection('shoppingCar');
 
   const carList = document.querySelector('.car__list');
+  const subTotal = document.querySelector('.subTotal');
+  const totalSum = document.querySelector('.totalSum');
 
    //creacion de los productos a nivel visual
   function renderProducts (list) {
@@ -17,13 +22,20 @@
 
       const url = `detalle.html?${elem.id}`;
       //newProduct.setAttribute('href', url);
+
+      total = envio + parseInt(elem.price);
        
       newProduct.innerHTML = `
       <a href="${url}"><img class="carProduct__img" src="" alt=""></a>
-      <p class="carProduct__name">${elem.name}</p>
+      <p class="carProduct__text">${elem.name}</p>
+      <p class="carProduct__text">$ ${envio}</p>
       <p class="carProduct__price">$ ${elem.price}</p>
+      <p class="carProduct__price carProduct__price--total">$ ${total}</p>
       <button class="carProduct__delete"> Eliminar</button>
       `;
+       sumTotal += total;
+       subTotal.innerHTML = '$' + ' ' + sumTotal;
+       totalSum.innerText = '$' + ' ' + sumTotal;
     
       if(elem.img){
         storageRef.child(elem.img).getDownloadURL().then(function(url) {
@@ -35,6 +47,22 @@
           // Handle any errors
         });
       }
+
+      
+
+      const deleteBtn = newProduct.querySelector('.carProduct__delete');
+
+      deleteBtn.addEventListener('click', function(){
+        carRef.doc(elem.id).delete().then(function(){
+          getProducts();
+          location.reload();
+          alert("Producto eliminado correctamente");
+        }).catch(function(error){
+          alert("Error al eliminar documento")
+          console.error("Error removing document: ", error);
+        });
+    });
+
 
       carList.appendChild(newProduct);
     });

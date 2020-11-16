@@ -4,6 +4,7 @@
   const usersRef = db.collection("users");
   var storageRef = firebase.storage().ref();
   var userId = localStorage.getItem('userId');
+ 
 
 
   const productsList = document.querySelector('.productsList');
@@ -25,8 +26,8 @@
           <p class="product__price">$ ${elem.price}</p>
       </div></a>
       <button class="product__addBtn"> Agregar a carrito </button>
-      <button class="product__adminBtn hidden showAdmin"> Editar </button>
-      <button class="product__adminBtn hidden showAdmin"> Eliminar</button>
+      <button class="product__editBtn hidden showAdmin"> Editar </button>
+      <button class="product__deleteBtn hidden showAdmin"> Eliminar</button>
       `;
     
       if(elem.img){
@@ -53,8 +54,28 @@
             }
 
           )
-        console.log(userInfo);
       });
+
+      const deleteBtn = newProduct.querySelector('.product__deleteBtn');
+
+        deleteBtn.addEventListener('click', function(){
+            productsRef.doc(elem.id).delete().then(function(){
+              getProducts();
+              alert("Producto eliminado correctamente");
+            }).catch(function(error){
+              alert("Error al eliminar documento")
+              console.error("Error removing document: ", error);
+            });
+        });
+
+        const editBtn = newProduct.querySelector('.product__editBtn');
+
+        editBtn.addEventListener('click', function(){
+
+          const urlEdit = `editProduct.html?${elem.id}`;
+          window.location.href = urlEdit;
+            
+        });
 
       productsList.appendChild(newProduct);
     });
@@ -77,5 +98,8 @@ function getProducts() {
     renderProducts(products);
 });
 }
-  
+ 
 getProducts();
+
+
+
