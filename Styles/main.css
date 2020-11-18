@@ -269,6 +269,11 @@ a {
   color: #333;
 }
 
+.normalText--details {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
 .normalText--negative {
   color: white;
 }
@@ -294,6 +299,10 @@ a {
   font-size: 21px;
   font-weight: 700;
   font-family: 'Dosis', sans-serif;
+}
+
+.title--details {
+  margin-bottom: 20px;
 }
 
 .title--negative {
@@ -401,7 +410,7 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   h1 {
     font-size: 30px;
   }
@@ -410,6 +419,11 @@ a {
   }
   .title {
     font-size: 18px;
+    margin-top: 10px;
+  }
+  .title--sum {
+    border-bottom: black solid 1px;
+    margin-top: 20px;
   }
   .normalText {
     font-size: 18px;
@@ -528,6 +542,13 @@ a {
   top: 22px;
 }
 
+@media (max-width: 380px) {
+  .mainHeader .move {
+    right: -150px;
+    top: 8px;
+  }
+}
+
 .mainHeader__bagIcon {
   width: 20px;
   height: 27px;
@@ -637,7 +658,7 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .mainHeader {
     width: 100%;
     display: -webkit-box;
@@ -647,6 +668,21 @@ a {
         -ms-flex-align: center;
             align-items: center;
     border-bottom: #0000004f solid 1px;
+  }
+  .mainHeader__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .mainHeader__inputDiv {
+    width: 35%;
   }
   .mainHeader__logoCont {
     width: 70px;
@@ -660,15 +696,18 @@ a {
     position: absolute;
     height: 20px;
     width: 20px;
-    top: 0px;
-    right: 60px;
+    top: 6px;
+    right: -130px;
   }
   .mainHeader__menuIcon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 20px;
-    width: 30px;
+    display: none;
+  }
+  .mainHeader__bagIcon {
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    top: 6px;
+    right: -100px;
   }
 }
 
@@ -879,7 +918,7 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .btn {
     width: 110px;
     height: 35px;
@@ -889,6 +928,16 @@ a {
     width: 250px;
     height: 35px;
     margin: 0;
+  }
+  .btn--carrito {
+    margin: 0px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .btn--sum {
+    height: 30px;
+    margin-right: 0px;
+    width: 150px;
   }
 }
 
@@ -1055,6 +1104,16 @@ a {
           justify-content: center;
 }
 
+.row__col--detalles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .row__col--btn {
   padding-left: 30px;
   display: -webkit-box;
@@ -1217,6 +1276,38 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .row__col {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row__col--detalles {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .row__col--details {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
@@ -1504,11 +1595,16 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .input {
     width: 250px;
     height: 35px;
     margin: 0px;
+  }
+  .input__checkBox {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
   }
 }
 
@@ -1721,6 +1817,12 @@ a {
   width: 75%;
 }
 
+@media (max-width: 380px) {
+  .productContainer {
+    width: 100%;
+  }
+}
+
 .titles {
   position: relative;
   margin-top: 20px;
@@ -1735,6 +1837,18 @@ a {
   position: absolute;
   top: 5px;
   left: 40px;
+}
+
+@media (max-width: 380px) {
+  .titles__background {
+    width: 50%;
+  }
+  .titles__text {
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+  }
 }
 
 .productsList {
@@ -1755,6 +1869,13 @@ a {
 
 .product__img {
   border-radius: 10px;
+}
+
+.product__details {
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  color: #333;
+  margin-top: 20px;
 }
 
 .product__newProduct {
@@ -1808,6 +1929,45 @@ a {
   font-family: 'Dosis', sans-serif;
 }
 
+@media (max-width: 380px) {
+  .product {
+    width: 40%;
+  }
+  .product__name {
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+  }
+  .product__price {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+  }
+  .product__addBtn {
+    width: 125px;
+    height: 35px;
+    background-color: #0D0D0D;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 6px;
+    margin-right: 0px;
+  }
+  .product__editBtn {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .product__deleteBtn {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .product__newProduct {
+    height: 130px;
+    width: 40%;
+  }
+}
+
 .mainBody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1843,6 +2003,29 @@ a {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 380px) {
+  .mainBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+  .mainBody--details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .filter {
@@ -1881,6 +2064,42 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 380px) {
+  .filter {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+  }
+  .filter__title {
+    border-bottom: black 1px solid;
+  }
+  .filter__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
 }
 
 .form {
@@ -1947,6 +2166,77 @@ a {
   font-family: 'Dosis', sans-serif;
 }
 
+@media (max-width: 380px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form--newPro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__img {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .form__previewImg {
+    border-radius: 10px;
+  }
+  .form__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .form__btn {
+    width: 250px;
+    height: 35px;
+    background-color: #0D0D0D;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .form__btn--transparent {
+    background-color: transparent;
+    color: #0D0D0D;
+    border: none;
+    margin-right: 20px;
+  }
+  .form__error {
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+  }
+}
+
 .auth__without p {
   color: #333;
   font-family: 'Dosis', sans-serif;
@@ -1964,6 +2254,29 @@ a {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
   font-size: 13px;
+}
+
+@media (max-width: 380px) {
+  .auth__without p {
+    color: #333;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 0px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .auth__with {
+    margin-right: 20px;
+  }
+  .auth__with p {
+    color: #333;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .auth__profileIcon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .carContainer {
@@ -2021,7 +2334,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   font-family: 'Dosis', sans-serif;
-  margin-left: 130px;
+  margin-left: 110px;
   margin-right: 100px;
 }
 
@@ -2094,6 +2407,90 @@ a {
   margin-bottom: 10px;
 }
 
+@media (max-width: 380px) {
+  .car__info {
+    display: none;
+  }
+  .car__title {
+    margin-right: 0px;
+  }
+  .carProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: black solid 1px;
+  }
+  .carProduct__img {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .carProduct__text {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    color: #333;
+    margin-right: 0px;
+  }
+  .carProduct__price {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .carProduct__delete {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .summaryContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .summary {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .summary__div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .summary__div--sub {
+    border-bottom: solid black 1px;
+    margin-bottom: 10px;
+  }
+}
+
 .profile {
   position: absolute;
   -webkit-box-orient: vertical;
@@ -2118,5 +2515,61 @@ a {
   font-size: 20px;
   font-family: 'Dosis', sans-serif;
   color: #333;
+}
+
+.orderItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+}
+
+.orderItem__text {
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  color: #333;
+  margin-right: 200px;
+}
+
+.orderItem__text--adress {
+  margin-right: 100px;
+}
+
+.orderItem__price {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  color: #04b804;
+}
+
+.orderItem__product {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  margin-right: 180px;
+}
+
+@media (max-width: 380px) {
+  .orderItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+    border-bottom: solid black 1px;
+  }
+  .orderItem__price {
+    font-size: 20px;
+  }
+  .orderItem__product {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

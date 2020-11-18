@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     width: 75%;
+
+    @media(max-width: 380px){
+        width: 100%;
+    }
 }
 
 .titles{
@@ -17,6 +21,19 @@
         position: absolute;
         top: 5px;
         left: 40px;
+    }
+
+    @media(max-width: 380px){
+        &__background{
+            width: 50%;
+        }
+
+        &__text{
+            color: white;
+            position: absolute;
+            top: -5px;
+            left: 20px;
+        }
     }
 
 }
@@ -38,6 +55,13 @@
     &__img{
         border-radius: 10px;
 
+    }
+
+    &__details{
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+        color: $textBlack;
+        margin-top: 20px;
     }
 
     &__newProduct{
@@ -92,5 +116,50 @@
         font-size: 21px;
         font-weight: 700;
         font-family: 'Dosis', sans-serif;
+    }
+
+    @media(max-width: 380px){
+        width: 40%;
+
+        &__name{
+            font-weight: 500;
+            font-family: 'Dosis', sans-serif;
+            font-size: 18px;
+        }
+    
+        &__price{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        &__addBtn{
+            width: 125px;
+            height: 35px;
+            background-color: $btnBlack;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Dosis', sans-serif;
+            border-radius: 6px;
+            margin-right: 0px;
+    
+        }
+
+        &__editBtn{
+            font-size: 16px;
+            font-weight: 700;    
+        }
+
+        &__deleteBtn{
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &__newProduct{
+            height: 130px;
+            width: 40%;
+        }
+
     }
 }

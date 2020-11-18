@@ -13,8 +13,8 @@
         </section>
         <nav class="mainHeader__nav">
             <section class="mainHeader__navDiv">
-                <a class="mainHeader__navItem" href=""><p>Inicio</p></a> 
-                <a class="mainHeader__navItem" href=""><p>Productos</p></a> 
+                <a class="mainHeader__navItem" href="./index.html"><p>Inicio</p></a> 
+                <a class="mainHeader__navItem" href="./productos.html"><p>Productos</p></a> 
                 <a class="mainHeader__navItem" href=""><p>Sobre nosotros</p></a>
             </section>
            <section class="mainHeader__inputDiv">
@@ -38,18 +38,25 @@
             <section class="row__col">
 
             </section>
-            <section class="row__col">
+            <section class="row__col row__col--detalles">
                 <img class="product__img" src="" alt="producto">
+                <p class="product__details">Detalles</p>
             </section>
-            <section class="row__col">
+            <section class="row__col row__col--details">
                 <div>
-                    <p class="normalText">Nombre</p>
-                    <p class="title">Precio</p>
+                    <p class="normalText normalText--details">Nombre</p>
+                    <p class="title title--details">Precio</p>
                     <button class="btn btn--carrito">Agregar al Carrito</button>
                 </div>
                 
             </section>
         </article>
+        <aside class="profile hidden">
+            <img class="profile__img" src="./Images/profileIcon.png" alt="profileIcon">
+            <p class="profile__name">Nombre</p>
+            <a href="#" class="profile__signOut"><p class="normalText">Cerrar Sesión</p></a>
+            <a href="./myOrders.html"><p class="normalText">Mis pedidos</p></a>
+        </aside>
 
     </main>
     <footer class="footer">

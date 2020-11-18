@@ -28,6 +28,7 @@ form.addEventListener('submit', function (event) {
     const newPedido = {
       name: form.name.value,
       adress: form.adress.value,
+      payment: form.payment.value,
       products: products,
       total: total,
 

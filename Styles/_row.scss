@@ -8,6 +8,11 @@
         display: flex;
         justify-content: center;
 
+        &--detalles{
+            display: flex;
+            flex-direction: column;
+        }
+
         &--btn{
             padding-left: 30px;
             display: flex;
@@ -107,5 +112,28 @@
         flex-direction: column;
         justify-content: center;
     }
+    }
+}
+
+@media(max-width: 380px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    
+        
+        &__col{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &--detalles{
+                order: 1;
+            }
+
+            &--details{
+                order: 0;
+            }
+        }
     }
 }

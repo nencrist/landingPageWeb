@@ -16,7 +16,7 @@
        
       newOrder.innerHTML = `
       <p class="orderItem__text">${elem.name}</p>
-      <p class="orderItem__text">${elem.adress}</p>
+      <p class="orderItem__text orderItem__text--adress">${elem.adress}</p>
       <p class="orderItem__product">${elem.products}</p>
       <p class="orderItem__price">$${elem.total}</p>
       `;

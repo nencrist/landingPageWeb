@@ -51,3 +51,67 @@
     }
 
 }
+
+@media(max-width: 380px){
+  
+    .form{
+        display: flex;
+        flex-direction: column;
+
+        &--newPro{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btns{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        &__img{
+            width: 30%;
+            margin-right: 20px;
+        }
+    
+        &__previewImg{
+            border-radius: 10px;
+        }
+    
+        &__label {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+    
+        
+        &__btn{
+            width: 250px;
+            height: 35px;
+            background-color: $btnBlack;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Dosis', sans-serif;
+            border-radius: 6px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+    
+            &--transparent{
+                background-color: transparent;
+                color: $btnBlack;
+                border: none;
+                margin-right: 20px;
+            }
+    
+        }
+    
+        &__error{
+            color: red;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Dosis', sans-serif;
+        }
+    
+    }
+
+}

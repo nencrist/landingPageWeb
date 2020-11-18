@@ -6,23 +6,29 @@
     <title>Visionary Trend - Login</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
-<body>
+<body class="landingBody">
     <header class="mainHeader">
         <section class="mainHeader__logoCont">
             <img class="mainHeader__logo" src="./Images/logo.png" alt="logo">
         </section>
         <nav class="mainHeader__nav">
             <section class="mainHeader__navDiv">
-                <a class="mainHeader__navItem" href="./index.html"><p>Inicio</p></a> 
-                <a class="mainHeader__navItem" href="./productos.html"><p>Productos</p></a> 
-                <a class="mainHeader__navItem" href="#"><p>Sobre nosotros</p></a>
+                <a class="mainHeader__navItem" href=""><p>Inicio</p></a> 
+                <a class="mainHeader__navItem" href=""><p>Productos</p></a> 
+                <a class="mainHeader__navItem" href=""><p>Sobre nosotros</p></a>
             </section>
            <section class="mainHeader__inputDiv">
             <input class="mainHeader__input" type="text" name="" id="" placeholder="Search">
             <img class="mainHeader__searchIcon" src="./Images/searchIcon.png" alt="searchIcon">
             <img class="mainHeader__menuIcon" src="./Images/menu.png" alt="menuIcon">
-            <a class="loginNav" href="./login.html"><p>Inicia Sesión</p></a>
-            <img class="mainHeader__bagIcon" src="./Images/bagIcon.png" alt="bagIcon">
+            <a class="auth__without" href="./login.html"><p>Inicia Sesión</p></a>
+            <div class="auth__with hidden">
+                <a href="#" class="auth__profile">
+                    <img src="./Images/profileIcon.png" alt="profileIcon">
+                    <p>Nombre</p>
+                </a>
+            </div>
+            <a href="./miBolsa.html"><img class="mainHeader__bagIcon" src="./Images/bagIcon.png" alt="bagIcon"></a>
            </section>
         </nav>
     </header>

@@ -28,11 +28,16 @@
         width: 335px;
     }
 
-    @media(max-width: 400px){
+    @media(max-width: 380px){
         width: 250px;
         height: 35px;
         margin: 0px;
         
+        &__checkBox{
+            width: 18px;
+            height: 18px;
+            margin: 5px;
+        }
     }
 
     

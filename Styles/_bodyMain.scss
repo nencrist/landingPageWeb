@@ -29,3 +29,20 @@
 .hidden {
     display: none;
 }
+
+@media(max-width: 380px){
+
+    .mainBody{
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+
+    &--details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    }
+    
+}

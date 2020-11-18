@@ -24,6 +24,11 @@ a{
     font-family: 'Dosis', sans-serif;
     color: $textBlack;
 
+    &--details{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
     &--negative{
         color: white;
     }
@@ -51,6 +56,10 @@ a{
     font-size: 21px;
     font-weight: 700;
     font-family: 'Dosis', sans-serif;
+
+    &--details{
+        margin-bottom: 20px;
+    }
 
     &--negative{
         color: white;
@@ -185,7 +194,7 @@ a{
 
 }
 
-@media(max-width: 400px){
+@media(max-width: 380px){
     h1{
         font-size: 30px;
     }
@@ -196,6 +205,13 @@ a{
 
     .title{
         font-size: 18px;
+        margin-top: 10px;
+
+        &--sum{
+            border-bottom: black solid 1px;
+            margin-top: 20px;
+        }
+
     }
 
     .normalText{

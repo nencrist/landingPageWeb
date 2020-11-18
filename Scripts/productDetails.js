@@ -18,6 +18,7 @@ productsRef.doc(productId).get().then(function (snapshot) {
 
     
     document.querySelector('.title').innerText = productInfo.price;
+    document.querySelector('.product__details').innerHTML = productInfo.details;
 
     if(productInfo.img){
         storageRef.child(productInfo.img).getDownloadURL().then(function(url) {

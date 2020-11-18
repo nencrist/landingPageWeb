@@ -1,0 +1,48 @@
+.orderItem{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+    &__text{
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+        color: $textBlack;
+        margin-right: 200px;
+
+        &--adress{
+            margin-right: 100px;
+        }
+    }
+
+
+    &__price{
+        font-size: 21px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        color:rgb(4, 184, 4);
+    }
+
+    &__product{
+        font-size: 21px;
+        font-weight: 700;
+        font-family: 'Dosis', sans-serif;
+        margin-right: 180px;
+    }
+}
+
+@media(max-width: 380px){
+    .orderItem{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        border-bottom: solid black 1px;
+
+        &__price{
+            font-size: 20px;
+        }
+    
+        &__product{
+            font-size: 20px;
+        }
+    }
+}
