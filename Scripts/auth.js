@@ -4,6 +4,7 @@ const authProfileName = document.querySelector('.auth__profile p');
 const searchIcon = document.querySelector('.mainHeader__searchIcon');
 
 
+
 firebase.auth().onAuthStateChanged(function(user) {
 
     //usuario ya inicio sesion o ya se registro
@@ -22,13 +23,17 @@ firebase.auth().onAuthStateChanged(function(user) {
                 authProfileName.innerText = data.name;
 
                 const showAdmin = document.querySelectorAll('.showAdmin');
-                const addToCarBtn = document.querySelector('.product__addBtn');
+                const addToCarBtn = document.querySelectorAll('.product__addBtn');
+        
                 if(data.admin){
                     showAdmin.forEach(function (elem){
                         elem.classList.remove('hidden');
 
                     });
-                        addToCarBtn.classList.add('hidden');
+                    addToCarBtn.forEach(function(elem){
+                        elem.classList.add('hidden');
+                    });
+                        
                 }
             }
 

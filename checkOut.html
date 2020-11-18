@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary Trend - CheckOut</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body class="landingBody">
+    <header class="mainHeader">
+        <section class="mainHeader__logoCont">
+            <img class="mainHeader__logo" src="./Images/logo.png" alt="logo">
+        </section>
+        <nav class="mainHeader__nav">
+            <section class="mainHeader__navDiv">
+                <a class="mainHeader__navItem" href="./index.html"><p>Inicio</p></a> 
+                <a class="mainHeader__navItem" href="./productos.html"><p>Productos</p></a> 
+                <a class="mainHeader__navItem" href="#"><p>Sobre nosotros</p></a>
+            </section>
+           <section class="mainHeader__inputDiv">
+            <input class="mainHeader__input" type="text" name="" id="" placeholder="Search">
+            <img class="mainHeader__searchIcon" src="./Images/searchIcon.png" alt="searchIcon">
+            <img class="mainHeader__menuIcon" src="./Images/menu.png" alt="menuIcon">
+            <a class="auth__without" href="./login.html"><p>Inicia Sesión</p></a>
+            <div class="auth__with hidden">
+                <a href="#" class="auth__profile">
+                    <img src="./Images/profileIcon.png" alt="profileIcon">
+                    <p>Nombre</p>
+                </a>
+            </div>
+            <a href="./miBolsa.html"><img class="mainHeader__bagIcon" src="./Images/bagIcon.png" alt="bagIcon"></a>
+           </section>
+        </nav>
+    </header>
+    <main class="mainBody mainBody--details">
+        <h3>CheckOut</h3>
+        <form class="form">
+            <label class="form__label"> 
+                <p class="title">Nombre</p> 
+                <input class="input" name="name" type="text">
+            </label>
+            <label class="form__label">
+                <p class="title">Dirección</p>
+                <input class="input" name="adress" type="text">
+            </label>
+            <p class="title">Metodo de pago</p>
+            <label class="form__label">
+                <p class="normalText">Credito</p>
+                <input class="input input__checkBox" name="credit" type="checkbox">
+            </label>
+            <label class="form__label">
+                <p class="normalText">Efectivo</p>
+                <input class="input input__checkBox" name="cash" type="checkbox">
+            </label>
+           
+            <div class="form__btns">
+                <button type="reset" class="form__btn form__btn--transparent">Cancelar</button>
+                <button type="submit" class="form__btn">Comprar</button>
+            </div>
+        </form>
+        <aside class="profile hidden">
+            <img src="./Images/profileIcon.png" alt="profileIcon">
+            <p class="normalText">Nombre</p>
+            <a href="#" class="profile__signOut"><p class="normalText">Cerrar Sesión</p></a>
+        </aside>
+    </main>
+    <footer class="footer">
+        <section class="footer__up">
+            <section class="footer__itemsWrap">
+                <img class="footer__imageLogo" src="./Images/footerLogo.png" alt="logoFooter">
+                <p class="normalText normalText--grey">Nuestra misión es proporcionar un producto
+                    de excelente calidad, que sea ascequible
+                    para todo el mundo y con el cual la gente
+                    se sienta cómoda y exclusiva.</p>
+            </section>
+            <section class="footer__navWrap">
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Acerca de</p></a>
+                    <a href=""><p class="normalText normalText--negative">Noticias</p></a>
+                    <a href=""><p class="normalText normalText--negative">Nuestro Equipo</p></a>
+                </section>
+                <section class="footer__nav">
+                    <a href=""><p class="normalText normalText--negative">Nuestros Patrocinadores</p></a>
+                    <a href=""><p class="normalText normalText--negative">Centro de Ayuda</p></a>
+                    <a href=""><p class="normalText normalText--negative">Preguntas Frecuentes</p></a>
+                </section>
+            </section>
+        </section>
+        <section class="footer__down">
+            <section class="footer__navWrap footer__navWrap--down" >
+                <a href=""><p class="normalText normalText--footerDownGrey">2020 Visionary Trend</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Terminos de Uso</p></a>
+                <a href=""><p class="normalText normalText--footerDown">Politica de Privacidad</p></a>
+            </section>
+            <section class="footer__socialWrap">
+                <img class="image__social" src="./Images/facebookLink.png" alt="facebook">
+                <img class="image__social" src="./Images/twitterLink.png" alt="twitter">
+                <img class="image__social" src="./Images/instaLink.png" alt="instagram">
+            </section>
+        </section>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./Scripts/firebase.js"></script>
+    <script src="./Scripts/auth.js"></script>
+    <script src="./Scripts/checkOut.js"></script>
+    <script src="./Scripts/profile.js"></script>
+   
+    
+</body>
+</html>

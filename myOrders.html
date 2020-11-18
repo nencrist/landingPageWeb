@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary Trend - Agregar Producto</title>
+    <title>Visionary Trend - Mis pedidos</title>
     <link rel="stylesheet" href="./Styles/main.css">
 </head>
 <body class="landingBody">
@@ -33,39 +33,18 @@
         </nav>
     </header>
     <main class="mainBody mainBody--details">
-        <h3>Nuevo Producto</h3>
-        <form class="form form--newPro">
-            <section class="form__img">
-                <label class="form__label">
-                    <p class="title">Imagen</p>
-                    <img class="form__previewImg" src="" alt="">
-                    <input class="input__img" name="img" type="file">
-                </label>
-            </section>
-           <section class="form__inputs">
-            <label class="form__label"> 
-                <p class="title">Nombre</p> 
-                <input class="input" name="name" type="text">
-            </label>
-            <label class="form__label">
-                <p class="title">Precio</p>
-                <input class="input" name="price" type="text">
-            </label>
-            <label class="form__label">
-                <p class="title">Color</p>
-                <input class="input" name="color" type="text">
-            </label>
-            <label class="form__label">
-                <p class="title">Detalles</p>
-                <textarea class="input__details" name="details" cols="30" rows="10"></textarea>
-            </label>
-            <div class="form__btns">
-                <button type="reset" class="form__btn form__btn--transparent">Cancelar</button>
-                <button type="submit" class="form__btn">Publicar</button>
-            </div>
-           </section>
-           
-        </form>
+        <h3>Pedidos</h3>
+            <article class="carContainer">
+                <section class="car__info">
+                    <p class="title car__title">Nombre</p>
+                    <p class="title car__title">Dirección</p>
+                    <p class="title car__title">Productos</p>
+                    <p class="title car__title">Total</p>
+                </section>
+               <section class="order__list">
+
+               </section>
+            </article>
         <aside class="profile hidden">
             <img src="./Images/profileIcon.png" alt="profileIcon">
             <p class="normalText">Nombre</p>
@@ -111,12 +90,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
     <script src="./Scripts/firebase.js"></script>
     <script src="./Scripts/auth.js"></script>
-    <script src="./Scripts/form.js"></script>
+    <script src="./Scripts/orders.js"></script>
     <script src="./Scripts/profile.js"></script>
-   
-    
 </body>
 </html>

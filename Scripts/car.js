@@ -6,12 +6,13 @@
   var total;
   var sumTotal = 0;
 
-  var userId = localStorage.getItem('userId')
+  var userId = localStorage.getItem('userId');
   const carRef = usersRef.doc(userId).collection('shoppingCar');
 
   const carList = document.querySelector('.car__list');
   const subTotal = document.querySelector('.subTotal');
   const totalSum = document.querySelector('.totalSum');
+  const goToPayBtn = document.querySelector('.btn');
 
    //creacion de los productos a nivel visual
   function renderProducts (list) {
@@ -22,6 +23,9 @@
 
       const url = `detalle.html?${elem.id}`;
       //newProduct.setAttribute('href', url);
+
+      window.localStorage.setItem('productId', elem.id);
+      
 
       total = envio + parseInt(elem.price);
        
@@ -36,6 +40,7 @@
        sumTotal += total;
        subTotal.innerHTML = '$' + ' ' + sumTotal;
        totalSum.innerText = '$' + ' ' + sumTotal;
+       window.localStorage.setItem('total', sumTotal);
     
       if(elem.img){
         storageRef.child(elem.img).getDownloadURL().then(function(url) {
@@ -89,3 +94,8 @@
 
   
 getProducts();
+
+goToPayBtn.addEventListener('click', function(event){
+  event.preventDefault();
+  window.location.href = 'checkOut.html';
+});

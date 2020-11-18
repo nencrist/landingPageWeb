@@ -84,22 +84,75 @@
   }
 
 //aqui llamo los productos de la base de datos
+let itemsList = [];
 
 function getProducts() {
   productsRef.onSnapshot(function (querySnapshot) {
-    const products = [];
+    itemsList = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
-        products.push(obj);
+        itemsList.push(obj);
         console.log(`${doc.id} => ${doc.data()}`);
     });
 
-    renderProducts(products);
+    renderProducts(itemsList);
 });
 }
  
 getProducts();
 
+const filterForm = document.querySelector('.filterForm');
+filterForm.addEventListener('change', function(){
+  let copy = itemsList.slice();
+
+  const order = filterForm.order.value;
+
+  switch(order){
+    case "price__asc":
+      copy.sort(function(a, b){
+        return a.price - b.price;
+      });
+    break;
+    case "price__desc":
+      copy.sort(function(a, b){
+        return b.price - a.price;
+      });
+    break;
+  }
+
+  const typeFilter = filterForm.type.value;
+
+  if(typeFilter != ''){
+
+    copy = copy.filter(function(elem){
+
+      if(elem.name.includes(typeFilter)){
+        return true;
+      }
+      return false;
+  
+    });
+      
+  }
+
+  const colorSelect = filterForm.colorSelect.value;
+
+  
+  if(colorSelect != ''){
+
+    copy = copy.filter(function(elem){
+
+      if(elem.color.includes(colorSelect)){
+        return true;
+      }
+      return false;
+  
+    });
+      
+  }
 
 
+  renderProducts(copy);
+
+});

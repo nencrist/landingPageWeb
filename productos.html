@@ -34,26 +34,43 @@
     </header>
     <main class="mainBody">
         <aside class="filter">
+            <form class="filterForm">
             <section class="filter__filter">
                 <div class="filter__title">
                     <h3 class="title title--filter">Filtrar</h3>
                 </div>
                 <div class="filter__content">
                     <div class="filter__line">
+                        <p class="normalText">Todas</p>
+                        <input class="input__checkBox" type="radio" name="type" value="" checked>
+                    </div>
+                    <div class="filter__line">
                         <p class="normalText">Gorra Beisbol</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
+                        <input class="input__checkBox" type="radio" name="type" value="Beis">
                     </div>
                     <div class="filter__line">
                         <p class="normalText">Gorra Malla</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
+                        <input class="input__checkBox" type="radio" name="type" value="VM">
                     </div>
                    <div class="filter__line">
                     <p class="normalText">Gorra Basica</p>
-                    <input class="input__checkBox" type="checkbox" name="" id="">
+                    <input class="input__checkBox" type="radio" name="type" value="V">
                    </div>
+                   <div class="filter__line">
                     <p class="normalText">Color</p>
+                    <select name="colorSelect">
+                        <option value="">Selecciona un color</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul">Azúl</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Amarillo">Amarillo</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Cafe">Café</option>
+                    </select>
+                   </div>                    
                 </div>
-                    
             </section>
             <section class="filter__sort">
                 <div class="filter__title">
@@ -62,18 +79,19 @@
                 <div class="filter__content">
                     <div class="filter__line">
                         <p class="normalText">Menor precio</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
+                        <input class="input__checkBox" type="radio" name="order" value="price__asc">
                     </div>
                     <div class="filter__line">
                         <p class="normalText">Mayor precio</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
+                        <input class="input__checkBox" type="radio" name="order" value="price__desc">
                     </div>
                     <div class="filter__line">
                         <p class="normalText">Más vendido</p>
-                        <input class="input__checkBox" type="checkbox" name="" id="">
+                        <input class="input__checkBox" type="radio" name="">
                     </div>                    
                 </div>
             </section>
+        </form>
         </aside>
         <section class="productContainer">
             <div class="titles">
@@ -88,6 +106,7 @@
             <img class="profile__img" src="./Images/profileIcon.png" alt="profileIcon">
             <p class="profile__name">Nombre</p>
             <a href="#" class="profile__signOut"><p class="normalText">Cerrar Sesión</p></a>
+            <a href="./myOrders.html"><p class="normalText">Mis pedidos</p></a>
         </aside>
     </main>
     <footer class="footer">
