@@ -12,4 +12,7 @@ window.addEventListener('load', function(){
 });
 
 /*const btn = document.querySelector('.btn');
-btn.onMouse*/
+btn.addEventListener('mouseover', function(event){
+ event.preventDefault();
+ btn.style.background = '#FFFFFF';
+});*/
