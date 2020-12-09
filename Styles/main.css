@@ -2800,4 +2800,39 @@ a {
   border-radius: 100px;
   margin: 10px;
 }
+
+#blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 30px;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+#blue img {
+  position: absolute;
+  width: 30px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+#blue div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 20px;
+}
+
+#blue img:hover {
+  -webkit-transform: scale(10);
+          transform: scale(10);
+  opacity: 100;
+}
 /*# sourceMappingURL=main.css.map */

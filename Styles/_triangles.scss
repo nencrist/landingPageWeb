@@ -12,3 +12,32 @@
     border-radius: 100px;
     margin: 10px
 }
+#blue {
+    display: flex;
+    position: relative;
+    width: 30px;
+  margin-left: 200px;
+ margin-top: 200px;
+}
+#blue img{
+    position: absolute;
+    width: 30px;
+    border-radius: 3px;
+ opacity: 0;
+  transition: transform 0.8s;
+
+}
+#blue div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+background-color: blue;
+
+border-radius: 20px;
+ 
+}
+#blue img:hover{
+  
+    transform: scale(10);
+opacity: 100;
+}
