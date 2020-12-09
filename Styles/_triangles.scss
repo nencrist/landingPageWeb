@@ -1,0 +1,14 @@
+.interactionContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.triangle{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: black;
+    border-radius: 100px;
+    margin: 10px
+}
