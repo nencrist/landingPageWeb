@@ -3,6 +3,8 @@
     height: 500px;
     display: flex;
     flex-direction: row;
+    background-image: url("../Images/interaction.png");
+    background-size: cover;
 }
 .triangle{
     width: 30px;
@@ -15,29 +17,36 @@
 #blue {
     display: flex;
     position: relative;
-    width: 30px;
-  margin-left: 200px;
- margin-top: 200px;
+    width: 90px;
+  margin-left: 180px;
+ margin-top: 150px;
 }
-#blue img{
+#blueImg{
     position: absolute;
-    width: 30px;
+    width: 100%;
     border-radius: 3px;
  opacity: 0;
-  transition: transform 0.8s;
+  
+}
+#blueTriangle{
+    position: absolute;
+    width: 100%;
+  
+   
+
+   transition: transform 0.8s;
+
+&:hover{
+    transform: scale(1.2);
 
 }
-#blue div{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-background-color: blue;
-
-border-radius: 20px;
  
 }
-#blue img:hover{
+
+
+/*
+#blueImg:hover{
   
-    transform: scale(10);
+    transform: scale(5);
 opacity: 100;
-}
+}*/

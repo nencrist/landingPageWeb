@@ -2790,6 +2790,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-image: url("../Images/interaction.png");
+  background-size: cover;
 }
 
 .triangle {
@@ -2806,33 +2808,36 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 30px;
-  margin-left: 200px;
-  margin-top: 200px;
+  width: 90px;
+  margin-left: 180px;
+  margin-top: 150px;
 }
 
-#blue img {
+#blueImg {
   position: absolute;
-  width: 30px;
+  width: 100%;
   border-radius: 3px;
   opacity: 0;
+}
+
+#blueTriangle {
+  position: absolute;
+  width: 100%;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
-#blue div {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: blue;
-  border-radius: 20px;
+#blueTriangle:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-#blue img:hover {
-  -webkit-transform: scale(10);
-          transform: scale(10);
-  opacity: 100;
-}
+/*
+#blueImg:hover{
+  
+    transform: scale(5);
+opacity: 100;
+}*/
 /*# sourceMappingURL=main.css.map */
