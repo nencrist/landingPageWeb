@@ -6,41 +6,77 @@
     background-image: url("../Images/interaction.png");
     background-size: cover;
 }
-.triangle{
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: black;
-    border-radius: 100px;
-    margin: 10px
-}
-#blue {
+
+
+.triangleContainer {
     display: flex;
     position: relative;
-    width: 90px;
-  margin-left: 180px;
- margin-top: 150px;
+    width: 25%;
+    
 }
-#blueImg{
+
+.blueImg{
     position: absolute;
-    width: 100%;
+    width: 50%;
     border-radius: 3px;
- opacity: 0;
+    opacity: 0;
+    right: 0;
   
 }
-#blueTriangle{
+
+
+.triangleB{
+    background-image: url('../Images/triangleB.png');
+    background-size: cover;
     position: absolute;
-    width: 100%;
-  
-   
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 106px;
 
-   transition: transform 0.8s;
+    &:hover{
+        transform: scale(1.2);
+        background-image: url('../Images/triangleRed.png');
+    }
 
-&:hover{
-    transform: scale(1.2);
+    &--mod{
+        left: 237px;
+        top: 333px;
 
+        &:hover{
+            width: 64px;
+            height: 74px;
+            top: 355px;
+            left: 238px;
+            background-image: url('../Images/triangleWhite.png');
+        }
+    }
 }
- 
+
+.triangleA{
+    background-image: url('../Images/triangleA.png');
+    background-size: cover;
+    position: absolute;
+    width: 68px;
+    height: 78px;
+    left: -2px;
+    bottom: 64px;
+
+    &:hover{
+        transform: scale(1.2);
+        background-image: url('../Images/triangleBlue.png');
+    }
+
+    &--mod{
+        width: 70px;
+        height: 80px;
+        left: 30px;
+        bottom: 295px;
+
+        &:hover{
+            background-image: url('../Images/triangleOrange.png');
+        }
+    }
 }
 
 
