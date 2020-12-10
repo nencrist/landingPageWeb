@@ -2872,4 +2872,74 @@ a {
     transform: scale(5);
 opacity: 100;
 }*/
+.overlay {
+  background-color: #00000030;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.popUp {
+  height: 250px;
+  width: 300px;
+  background-image: url("../Images/beisRed.png");
+  background-size: contain;
+  -webkit-box-shadow: 0px 0px 5px 0px #00000030;
+          box-shadow: 0px 0px 5px 0px #00000030;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.popUp--blue {
+  background-image: url("../Images/beisBlue.png");
+}
+
+.popUp--white {
+  background-image: url("../Images/beisWhite.png");
+}
+
+.popUp--orange {
+  background-image: url("../Images/beisOrange.png");
+}
+
+.closePopUp {
+  text-decoration: none;
+  color: #bbbbbb;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.closePopUp:hover {
+  color: #111111;
+}
+
+.popUp.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 /*# sourceMappingURL=main.css.map */

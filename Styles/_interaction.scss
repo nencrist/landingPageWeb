@@ -1,0 +1,61 @@
+.overlay{
+    background-color: #00000030;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popUp{
+    height: 250px;
+    width: 300px;
+    background-image: url('../Images/beisRed.png');
+    background-size: contain;
+    box-shadow: 0px 0px 5px 0px #00000030;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(0.6);
+   
+
+    &--blue{
+        background-image: url('../Images/beisBlue.png');
+        
+    }
+
+    &--white{
+        background-image: url('../Images/beisWhite.png');
+    }
+
+    &--orange{
+        background-image: url('../Images/beisOrange.png');
+    }
+}
+
+.closePopUp{
+    text-decoration: none;
+    color: #bbbbbb;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+
+    &:hover{
+        color: rgb(17, 17, 17);
+    }
+}
+
+.popUp.active{
+    opacity: 1;
+    transform: scale(1);
+}
