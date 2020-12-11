@@ -5,19 +5,22 @@
     flex-direction: row;
     background-image: url("../Images/interaction.png");
     background-size: cover;
+    position: relative;
 }
+
 .titulo{
  position: absolute;
- top: 270px;
+ top: 170px;
 right: 720px;
 }
+
 .Subtitulo{
     position: absolute;
     color: black;
    -webkit-text-fill-color: white;
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: black;
-    top: 330px;
+    top: 230px;
    right: 675px;
    }
 

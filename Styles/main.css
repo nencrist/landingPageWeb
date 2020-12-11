@@ -824,6 +824,12 @@ a {
   margin: 0;
 }
 
+.btn--ir {
+  position: absolute;
+  width: 100px;
+  height: 45px;
+}
+
 .btn--transparent {
   background-color: transparent;
 }
@@ -2792,11 +2798,12 @@ a {
           flex-direction: row;
   background-image: url("../Images/interaction.png");
   background-size: cover;
+  position: relative;
 }
 
 .titulo {
   position: absolute;
-  top: 270px;
+  top: 170px;
   right: 720px;
 }
 
@@ -2806,7 +2813,7 @@ a {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  top: 330px;
+  top: 230px;
   right: 675px;
 }
 
@@ -2826,13 +2833,8 @@ a {
   height: 100px;
   left: 15px;
   top: 106px;
-<<<<<<< HEAD
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-=======
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
->>>>>>> 9f8f4e61d7733f7e41389a1887fe7533d7d6a082
 }
 
 .triangleB:hover {
@@ -2842,15 +2844,10 @@ a {
 }
 
 .triangleB--mod {
+  -webkit-transition: .0s;
+  transition: .0s;
   left: 237px;
   top: 333px;
-<<<<<<< HEAD
-  -webkit-transition: .0s ease;
-  transition: .0s ease;
-=======
-  -webkit-transition: 0s;
-  transition: 0s;
->>>>>>> 9f8f4e61d7733f7e41389a1887fe7533d7d6a082
 }
 
 .triangleB--mod:hover {

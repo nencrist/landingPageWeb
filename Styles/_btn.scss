@@ -30,6 +30,13 @@
         margin: 0;
     }
 
+    &--ir{
+        position: absolute;
+        width: 100px;
+        height: 45px;      
+        
+    }
+
     &--transparent{
         background-color: transparent;
     }
