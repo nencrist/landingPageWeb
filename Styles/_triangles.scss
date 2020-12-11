@@ -15,16 +15,6 @@
     
 }
 
-.blueImg{
-    position: absolute;
-    width: 50%;
-    border-radius: 3px;
-    opacity: 0;
-    right: 0;
-  
-}
-
-
 .triangleB{
     background-image: url('../Images/triangleB.png');
     background-size: cover;
@@ -33,6 +23,7 @@
     height: 100px;
     left: 15px;
     top: 106px;
+    transition: .3s ease all;
 
     &:hover{
         transform: scale(1.2);
@@ -40,6 +31,7 @@
     }
 
     &--mod{
+        transition: .0s;
         left: 237px;
         top: 333px;
 
@@ -79,10 +71,3 @@
     }
 }
 
-
-/*
-#blueImg:hover{
-  
-    transform: scale(5);
-opacity: 100;
-}*/

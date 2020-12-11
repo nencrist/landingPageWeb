@@ -2802,14 +2802,6 @@ a {
   width: 25%;
 }
 
-.blueImg {
-  position: absolute;
-  width: 50%;
-  border-radius: 3px;
-  opacity: 0;
-  right: 0;
-}
-
 .triangleB {
   background-image: url("../Images/triangleB.png");
   background-size: cover;
@@ -2818,6 +2810,8 @@ a {
   height: 100px;
   left: 15px;
   top: 106px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
 }
 
 .triangleB:hover {
@@ -2829,6 +2823,8 @@ a {
 .triangleB--mod {
   left: 237px;
   top: 333px;
+  -webkit-transition: .0s ease;
+  transition: .0s ease;
 }
 
 .triangleB--mod:hover {
@@ -2866,12 +2862,6 @@ a {
   background-image: url("../Images/triangleOrange.png");
 }
 
-/*
-#blueImg:hover{
-  
-    transform: scale(5);
-opacity: 100;
-}*/
 .overlay {
   background-color: #00000030;
   position: fixed;
