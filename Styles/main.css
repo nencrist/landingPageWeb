@@ -824,6 +824,12 @@ a {
   margin: 0;
 }
 
+.btn--ir {
+  position: absolute;
+  width: 100px;
+  height: 45px;
+}
+
 .btn--transparent {
   background-color: transparent;
 }
