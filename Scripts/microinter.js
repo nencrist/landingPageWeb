@@ -7,6 +7,20 @@ window.addEventListener('load', function(){
     timeline.to('.promo__cap', {rotation: 3, duration: .2});
     timeline.to('.promo__cap', {rotation: 0, duration: .2});
 
+    const triangleA = gsap.timeline({repeat: -1, repeatDelay: 4});
+
+    triangleA.to('.triangleA', {rotation: 5, duration: .2});
+    triangleA.to('.triangleA', {rotation:-5, duration: .2});
+    triangleA.to('.triangleA', {rotation: 3, duration: .2});
+    triangleA.to('.triangleA', {rotation: 0, duration: .2});
+
+    const triangleB = gsap.timeline({repeat: -1, repeatDelay: 6});
+
+    triangleB.to('.triangleB', {rotation: 5, duration: .2});
+    triangleB.to('.triangleB', {rotation:-5, duration: .2});
+    triangleB.to('.triangleB', {rotation: 3, duration: .2});
+    triangleB.to('.triangleB', {rotation: 0, duration: .2});
+
 });
 
 //interaccion popUp
