@@ -2794,6 +2794,22 @@ a {
   background-size: cover;
 }
 
+.titulo {
+  position: absolute;
+  top: 270px;
+  right: 720px;
+}
+
+.Subtitulo {
+  position: absolute;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  top: 330px;
+  right: 675px;
+}
+
 .triangleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2818,6 +2834,8 @@ a {
   height: 100px;
   left: 15px;
   top: 106px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .triangleB:hover {
@@ -2829,6 +2847,8 @@ a {
 .triangleB--mod {
   left: 237px;
   top: 333px;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 .triangleB--mod:hover {
@@ -2847,6 +2867,8 @@ a {
   height: 78px;
   left: -2px;
   bottom: 64px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .triangleA:hover {

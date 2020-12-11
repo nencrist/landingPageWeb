@@ -6,6 +6,20 @@
     background-image: url("../Images/interaction.png");
     background-size: cover;
 }
+.titulo{
+ position: absolute;
+ top: 270px;
+right: 720px;
+}
+.Subtitulo{
+    position: absolute;
+    color: black;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+    top: 330px;
+   right: 675px;
+   }
 
 
 .triangleContainer {
@@ -33,7 +47,7 @@
     height: 100px;
     left: 15px;
     top: 106px;
-
+transition: 0.3s ease all;
     &:hover{
         transform: scale(1.2);
         background-image: url('../Images/triangleRed.png');
@@ -42,13 +56,14 @@
     &--mod{
         left: 237px;
         top: 333px;
-
+        transition: 0s;
         &:hover{
             width: 64px;
             height: 74px;
             top: 355px;
             left: 238px;
             background-image: url('../Images/triangleWhite.png');
+           
         }
     }
 }
@@ -61,7 +76,7 @@
     height: 78px;
     left: -2px;
     bottom: 64px;
-
+    transition: 0.3s ease all;
     &:hover{
         transform: scale(1.2);
         background-image: url('../Images/triangleBlue.png');
